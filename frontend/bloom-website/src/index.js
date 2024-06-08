@@ -13,6 +13,7 @@ import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
 import Properties from './pages/Properties';
 import Contact from './pages/Contact';
+import Property from './components/Property';
 import "./App.css";
 
 const AppLayout = () => (
@@ -29,6 +30,7 @@ const AppLayout = () => (
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/services" element={<Services />} />
       <Route path="/properties" element={<Properties />} />
+      <Route path="/properties-single" element={<Property />} />
       <Route path="/contact" element={<Contact />} />
      </Route>
    )

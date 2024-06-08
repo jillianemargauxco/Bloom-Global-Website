@@ -7,31 +7,34 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          Your Logo
+          <img src="images/logo.JPG" style={{width: '200px', height: '200px'}}/>
         </Link>
-        <ul className="navbar-menu">
-          <li className="navbar-item">
-            <Link to="/" className="navbar-link">
+        
+      </div>
+      <div className="navbar-container">
+      <ul className="navbar-menu">
+          <li className="navbar-item" >
+            <Link to="/" className="navbar-link" style={{fontSize: '24px'}}>
               Home
             </Link>
           </li>
           <li className="navbar-item">
-            <Link to="/about-us" className="navbar-link">
+            <Link to="/about-us" className="navbar-link" style={{fontSize: '24px'}}>
               About
             </Link>
           </li>
           <li className="navbar-item">
-            <Link to="/services" className="navbar-link">
+            <Link to="/services" className="navbar-link" style={{fontSize: '24px'}}>
               Services
             </Link>
           </li>
           <li className="navbar-item">
-            <Link to="/properties" className="navbar-link">
+            <Link to="/properties" className="navbar-link" style={{fontSize: '24px'}}>
               Properties
             </Link>
           </li>
           <li className="navbar-item">
-            <Link to="/contact" className="navbar-link">
+            <Link to="/contact" className="navbar-link" style={{fontSize: '24px'}}>
               Contact
             </Link>
           </li>

@@ -1,5 +1,10 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import { GiInjustice } from "react-icons/gi";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { FaHandshake } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
 
 const AboutUs = () => {
   // Any component-specific logic can go here
@@ -9,12 +14,12 @@ const AboutUs = () => {
       <Navbar/>
       
         {/* END nav */}
-        <section className="hero-wrap hero-wrap-2 ftco-degree-bg js-fullheight" style={{backgroundImage: 'url("images/bg_1.jpg")'}} data-stellar-background-ratio="0.5">
+        <section className="hero-wrap hero-wrap-2 ftco-degree-bg js-fullheight" style={{backgroundImage: 'url("images/bg_1.png")'}} data-stellar-background-ratio="0.5">
           <div className="overlay" />
           <div className="container">
             <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
               <div className="col-md-9  pb-5 text-center">
-                <p className="breadcrumbs"><span className="mr-2"><a href="index.html">Home <i className="ion-ios-arrow-forward" /></a></span> <span>About us <i className="ion-ios-arrow-forward" /></span></p>
+                <p className="breadcrumbs"><span className="mr-2"><Link to="/">Home <i className="ion-ios-arrow-forward" /></Link></span> <span>About us <i className="ion-ios-arrow-forward" /></span></p>
                 <h1 className="mb-3 bread">About Us</h1>
               </div>
             </div>
@@ -23,142 +28,149 @@ const AboutUs = () => {
         <section className="ftco-section ftco-no-pb">
           <div className="container">
             <div className="row no-gutters">
-              <div className="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style={{backgroundImage: 'url(images/about.jpg)'}}>
+              <div className="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style={{backgroundImage: 'url(images/about2.png)'}}>
               </div>
               <div className="col-md-6 wrap-about py-md-5 ">
                 <div className="heading-section p-md-5">
-                  <h2 className="mb-4">We Put People First.</h2>
-                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                  <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+                  <h2 className="mb-4">About Our Company</h2>
+                  <p>Bloom Global Estate and Development Corp. is
+                      dedicated to acquiring valuable assets through
+                      various means such as purchase, lease, and
+                      ownership. We have a team of experts who
+                      specialize in the development, management, and
+                      improvement of properties to enhance their value
+                      and potential return on investment.</p>
+                  <p>Our focus is on carefully selecting properties
+                      with growth potential and implementing
+                      strategic plans to optimize their performance in
+                      the market. Whether it's acquiring existing
+                      buildings or developing new structures, we are
+                      committed to delivering exceptional results for
+                      our investors and partners.</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="ftco-counter img" id="section-counter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6 col-lg-3 justify-content-center counter-wrap ">
-                <div className="block-18 py-4 mb-4">
-                  <div className="text text-border d-flex align-items-center">
-                    <strong className="number" data-number={305}>0</strong>
-                    <span>Area <br />Population</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-lg-3 justify-content-center counter-wrap ">
-                <div className="block-18 py-4 mb-4">
-                  <div className="text text-border d-flex align-items-center">
-                    <strong className="number" data-number={1090}>0</strong>
-                    <span>Total <br />Properties</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-lg-3 justify-content-center counter-wrap ">
-                <div className="block-18 py-4 mb-4">
-                  <div className="text text-border d-flex align-items-center">
-                    <strong className="number" data-number={209}>0</strong>
-                    <span>Average <br />House</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-lg-3 justify-content-center counter-wrap ">
-                <div className="block-18 py-4 mb-4">
-                  <div className="text d-flex align-items-center">
-                    <strong className="number" data-number={67}>0</strong>
-                    <span>Total <br />Branches</span>
+
+        <section className="ftco-section ftco-no-pb">
+        <div className="container-fluid px-md-0">
+          <div className="row no-gutters align-items-stretch room-animate site-section">
+            <div className="col-md-7 img-wrap">
+              <div className="bg-image h-100" style={{backgroundColor: '#efefef', backgroundImage: 'url("images/vision.png")' , marginLeft:'8rem'}} />
+            </div>
+            <div className="col-md-5">
+              <div className="row justify-content-center">
+                <div className="col-md-8 py-5">
+                  <h3 className="display-4 heading">Our Vision</h3>
+                  <div className="room-exerpt" data-aos="fade-up">
+                    <p>To provide quality homes to every Juan who
+                        dreams about having their own house and
+                        offices for people who became bolder with
+                        their dreams of starting their own business.
+                        We envision making those dreams come true
+                        to life.</p>                  
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section className="ftco-section testimony-section">
-          <div className="container">
-            <div className="row justify-content-center mb-5">
-              <div className="col-md-7 text-center heading-section ">
-                <span className="subheading">Testimonial</span>
-                <h2 className="mb-3">Happy Clients</h2>
-              </div>
+        </div>
+  
+        <div className="container-fluid px-md-0">
+          <div className="row no-gutters site-section">
+            <div className="col-md-7 order-md-2 img-wrap">
+              <div className="bg-image h-100" style={{backgroundColor: '#efefef', backgroundImage: 'url("images/mission.png")', marginRight:'9rem'}} />
             </div>
-            <div className="row ">
-              <div className="col-md-12">
-                <div className="ftco-owl">
-                  <div className="item">
-                    <div className="testimony-wrap py-4">
-                      <div className="text">
-                        <p className="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div className="d-flex align-items-center">
-                          <div className="user-img" style={{backgroundImage: 'url(images/person_1.jpg)'}} />
-                          <div className="pl-3">
-                            <p className="name">Roger Scott</p>
-                            <span className="position">Marketing Manager</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="testimony-wrap py-4">
-                      <div className="text">
-                        <p className="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div className="d-flex align-items-center">
-                          <div className="user-img" style={{backgroundImage: 'url(images/person_2.jpg)'}} />
-                          <div className="pl-3">
-                            <p className="name">Roger Scott</p>
-                            <span className="position">Marketing Manager</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="testimony-wrap py-4">
-                      <div className="text">
-                        <p className="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div className="d-flex align-items-center">
-                          <div className="user-img" style={{backgroundImage: 'url(images/person_3.jpg)'}} />
-                          <div className="pl-3">
-                            <p className="name">Roger Scott</p>
-                            <span className="position">Marketing Manager</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="testimony-wrap py-4">
-                      <div className="text">
-                        <p className="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div className="d-flex align-items-center">
-                          <div className="user-img" style={{backgroundImage: 'url(images/person_1.jpg)'}} />
-                          <div className="pl-3">
-                            <p className="name">Roger Scott</p>
-                            <span className="position">Marketing Manager</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="testimony-wrap py-4">
-                      <div className="text">
-                        <p className="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div className="d-flex align-items-center">
-                          <div className="user-img" style={{backgroundImage: 'url(images/person_2.jpg)'}} />
-                          <div className="pl-3">
-                            <p className="name">Roger Scott</p>
-                            <span className="position">Marketing Manager</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <div className="col-md-5">
+              <div className="row justify-content-center">
+                <div className="col-md-8 py-5">
+                  <h3 className="display-4 heading">Our Mission</h3>
+                  <div className="room-exerpt" data-aos="fade-up">
+                    <p>We aim to positively impact the lives of our
+                        clients by building better homes for them
+                        and their future generations with satisfaction
+                        in creating value beyond business</p>
+                    <p>We are committed to fostering a fair and
+                        transparent environment in all our dealings to
+                        create lasting value for our customers.
+                        Through our projects, we seek to enhance the
+                        quality of life within the communities we serve,
+                        connecting individuals with the perfect buyers
+                        and sellers for their properties while upholding
+                        the highest standards of service and integrity.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      
+        </section>      
+
+                   <section className='ftco-section ftco-no-pb'>
+                        <div className="container">
+                          <div className="container pt-0 pb-5">
+                            <div className="row justify-content-center text-center">  
+                              <div className="col-lg-6 section-heading" data-aos="fade-up">
+                              <div className="row justify-content-center">
+                              <div className="col-md-12 heading-section text-center mb-5">
+                                <span className="subheading" data-aos="fade-up">Core Values</span>
+                                <h2 className="mb-2">What Do We Stand By</h2>
+                              </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="row custom-row-02192 align-items-stretch">
+                            <div className="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay={100}>
+                              <div className="media-29191 text-center h-100">
+                                <div className="media-29191-icon">
+                                    <GiInjustice style={{ color: '#CDA375', fontSize: '48px' }} />
+                                </div>
+                                <h3>Honor & Fairness</h3>
+                                <p>We uphold the values of integrity and fairness in all our
+                                    actions, taking responsibility for our decisions and striving
+                                    to maintain ethical standards. We believe in conducting
+                                    business with honesty and transparency, ensuring
+                                    equitable outcomes for all parties involved.</p>
+                              </div>
+                            </div>
+                            <div className="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay={200}>
+                              <div className="media-29191 text-center h-100">
+                                <div className="media-29191-icon">
+                                    <FaPeopleGroup style={{ color: '#CDA375', fontSize: '48px' }} />
+                                </div>
+                                <h3>Teamwork, Respect & Mentorship</h3>
+                                <p>We foster a culture of collaboration and respect within
+                                    our organization, valuing diversity of perspectives and
+                                    ideas. We believe in the power of teamwork to drive
+                                    innovation and success, while also promoting mentorship
+                                    and development opportunities to nurture the talents of
+                                    our professionals.</p>
+                              </div>
+                            </div>
+                            <div className="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay={100}>
+                              <div className="media-29191 text-center h-100">
+                                <div className="media-29191-icon">
+                                  <FaHandshake style={{ color: '#CDA375', fontSize: '48px' }} />
+                                </div>
+                                <h3>Customer and Employee-Centric</h3>
+                                <p>We prioritize the needs and satisfaction of our customers,
+                                  recognizing them as the cornerstone of our success. By
+                                  listening attentively to their feedback and constantly
+                                  striving to exceed their expectations, we aim to build
+                                  enduring relationships based on trust and mutual benefit.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+
+      
+                
+    
+     
         <footer className="ftco-footer ftco-section">
           <div className="container">
             <div className="row mb-5">

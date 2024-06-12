@@ -1,5 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import { BsBuildingFillGear } from "react-icons/bs";
+import { FaMoneyBillTrendUp } from "react-icons/fa6";
+import { MdManageAccounts } from "react-icons/md";
+import { FaHandshakeAngle } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
+
+
+
+
 
 const Home = () => {
   // Any component-specific logic can go here
@@ -13,11 +22,11 @@ const Home = () => {
           <div className="overlay" />
           <div className="container">
             <div className="row no-gutters slider-text justify-content-center align-items-center">
-              <div className="col-lg-8 col-md-6  d-flex align-items-end">
-                <div className="text text-center">
-                  <h1 className="mb-4">The Simplest <br />Way to Find Property</h1>
-                  <p style={{fontSize: '18px'}}>Discover Residential, Commercial, and Industrial Real Estate with Ease Discover Residential, Commercial, and Industrial Real Estate with Ease</p>
-                  <form action="#" className="search-location mt-md-5">
+              <div className="col-lg-8 col-md-6 d-flex align-items-end ">
+                <div className="text text-center" data-aos="fade-up">
+                  <h1 className="mb-4" style={{fontFamily:"Ogg", color:'#243E5E', fontSize:'5rem'}}>Where Every Property <br/> Blooms</h1>
+                  <p style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}}>At Bloom Global Estate & Development, we transform your real estate aspirations into reality. Partner with us to discover exceptional service and unmatched expertise in the world of real estate.</p>
+                  <form action="#" className="search-location mt-md-5" data-aos="fade-up">
                     <div className="row justify-content-center">
                       <div className="col-lg-10 align-items-end">
                         <div className="form-group">
@@ -40,47 +49,102 @@ const Home = () => {
           </div>
         </div>
         <section className="ftco-section ftco-no-pb">
+          <div className="container" >
+            <div className="row no-gutters">
+              <div className="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center img-fluid"   style={{backgroundImage: 'url(images/about.png)'}}>
+              </div>
+              <div className="col-md-6 wrap-about py-md-5 ">
+                <div className="heading-section p-md-5">
+                  <h2 style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '40px'}} className="mb-4">Who are we?</h2>
+                  <p style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}}>Bloom Global Estate and Development Corp. is
+                      dedicated to acquiring valuable assets through
+                      various means such as purchase, lease, and
+                      ownership. We have a team of experts who
+                      specialize in the development, management, and
+                      improvement of properties to enhance their value
+                      and potential return on investment.</p>
+                  <p style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}}>Our focus is on carefully selecting properties
+                      with growth potential and implementing
+                      strategic plans to optimize their performance in
+                      the market. Whether it's acquiring existing
+                      buildings or developing new structures, we are
+                      committed to delivering exceptional results for
+                      our investors and partners.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="ftco-section ftco-no-pb">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-12 heading-section text-center mb-5">
-                <span className="subheading">Our Services</span>
-                <h2 className="mb-2">The smartest way to buy a home</h2>
+                <span className="subheading" data-aos="fade-up" >Our Services</span>
+                <h2 className="mb-2" data-aos="fade-up" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '40px'}}>What do we offer?</h2>
               </div>
             </div>
             <div className="row d-flex">
               <div className="col-md-3 d-flex align-self-stretch">
                 <div className="media block-6 services d-block text-center">
-                  <div className="icon d-flex justify-content-center align-items-center"><span className="flaticon-piggy-bank" /></div>
-                  <div className="media-body py-md-4">
-                    <h3>No Downpayment</h3>
-                    <p>Discover Residential, Commercial, and Industrial Real Estate with Ease Discover Residential, Commercial, and Industrial Real Estate with Ease</p>
+                  <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"> <BsBuildingFillGear style={{ color: '#CDA375', fontSize: '52px' }}/></div>
+                  <div className="media-body py-md-4" >
+                    <h3 data-aos="fade-up" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '24px'}}>Property Development</h3>
+                    <p className="text-left" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}} data-aos="fade-up">
+                      <ul>
+                        <li data-aos="fade-left" >Land acquisition and site selection</li>
+                        <li data-aos="fade-left">Feasibility studies and market analysis</li>
+                        <li data-aos="fade-left">Property design and development planning</li>
+                        <li data-aos="fade-left" >Obtaining permits and approvals</li>
+                        <li  data-aos="fade-left">Construction management</li>
+                      </ul>
+                    </p>
                   </div>
                 </div>      
               </div>
               <div className="col-md-3 d-flex align-self-stretch ">
                 <div className="media block-6 services d-block text-center">
-                  <div className="icon d-flex justify-content-center align-items-center"><span className="flaticon-wallet" /></div>
+                  <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><FaMoneyBillTrendUp  style={{ color: '#CDA375', fontSize: '54px' }}/></div>
                   <div className="media-body py-md-4">
-                    <h3>All Cash Offer</h3>
-                    <p>Discover Residential, Commercial, and Industrial Real Estate with Ease Discover Residential, Commercial, and Industrial Real Estate with Ease</p>
+                    <h3 data-aos="fade-up" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '24px'}}>Real Estate Investment</h3>
+                    <p className="text-left" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}}>
+                      <ul>
+                        <li data-aos="fade-left">Investment analysis and strategy development</li>
+                        <li data-aos="fade-left">Property valuation and appraisal</li>
+                        <li data-aos="fade-left">Financing and capital sourcing</li>
+                        <li data-aos="fade-left">Asset management and portfolio optimization</li>
+                      </ul>
+                    </p>
                   </div>
                 </div>      
               </div>
               <div className="col-md-3 d-flex align-self-stretch">
                 <div className="media block-6 services d-block text-center">
-                  <div className="icon d-flex justify-content-center align-items-center"><span className="flaticon-file" /></div>
+                  <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><MdManageAccounts style={{ color: '#CDA375', fontSize: '60px' }}/></div>
                   <div className="media-body py-md-4">
-                    <h3>Experts in Your Corner</h3>
-                    <p>Discover Residential, Commercial, and Industrial Real Estate with Ease Discover Residential, Commercial, and Industrial Real Estate with Ease</p>
+                    <h3 data-aos="fade-up" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '24px'}}>Property Management</h3>
+                    <p className="text-left" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}}>
+                      <ul>
+                        <li data-aos="fade-left">Tenant screening and leasing</li>
+                        <li data-aos="fade-left">Rent collection and financial reporting</li>
+                        <li data-aos="fade-left">Maintenance and repairs</li>
+                        <li data-aos="fade-left">Property marketing and tenant retention</li>
+                      </ul>
+                    </p>
                   </div>
                 </div>      
               </div>
               <div className="col-md-3 d-flex align-self-stretch ">
                 <div className="media block-6 services d-block text-center">
-                  <div className="icon d-flex justify-content-center align-items-center"><span className="flaticon-locked" /></div>
+                  <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><FaHandshakeAngle style={{ color: '#CDA375', fontSize: '60px' }}/></div>
                   <div className="media-body py-md-4">
-                    <h3>Lokced in Pricing</h3>
-                    <p>Discover Residential, Commercial, and Industrial Real Estate with Ease Discover Residential, Commercial, and Industrial Real Estate with Ease.</p>
+                    <h3 data-aos="fade-up" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '24px'}}>Brokerage Services</h3>
+                    <p className="text-left" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}}>
+                      <ul>
+                        <li data-aos="fade-left">Property listing and marketing</li>
+                        <li data-aos="fade-left">Buyer and seller representation</li>
+                        <li data-aos="fade-left">Lease negotiation and transaction management</li>
+                      </ul>
+                      </p>
                   </div>
                 </div>      
               </div>
@@ -91,28 +155,13 @@ const Home = () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-12 heading-section text-center  mb-5">
-                <span className="subheading">What we offer</span>
-                <h2 className="mb-2">Exclusive Offer For You</h2>
+                <span className="subheading">Upcoming Projects</span>
+                <h2 className="mb-2">Check out our project</h2>
               </div>
             </div>
             <div className="row">
               <div className="col-md-4">
-                <div className="property-wrap">
-                  <a href="#" className="img" style={{backgroundImage: 'url(images/work-1.jpg)'}} />
-                  <div className="text">
-                    <p className="price"><span className="old-price">800,000</span><span className="orig-price">$3,050<small>/mo</small></span></p>
-                    <ul className="property_list">
-                      <li><span className="flaticon-bed" />3</li>
-                      <li><span className="flaticon-bathtub" />2</li>
-                      <li><span className="flaticon-floor-plan" />1,878 sqft</li>
-                    </ul>
-                    <h3><a href="#">The Blue Sky Home</a></h3>
-                    <span className="location">Paranaque City</span>
-                    <a href="#" className="d-flex align-items-center justify-content-center btn-custom">
-                      <span className="ion-ios-link" />
-                    </a>
-                  </div>
-                </div>
+              
               </div>
               <div className="col-md-4">
                 <div className="property-wrap ">
@@ -133,44 +182,29 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="property-wrap ">
-                  <a href="#" className="img" style={{backgroundImage: 'url(images/work-3.jpg)'}} />
-                  <div className="text">
-                    <p className="price"><span className="old-price">800,000</span><span className="orig-price">$3,050<small>/mo</small></span></p>
-                    <ul className="property_list">
-                      <li><span className="flaticon-bed" />3</li>
-                      <li><span className="flaticon-bathtub" />2</li>
-                      <li><span className="flaticon-floor-plan" />1,878 sqft</li>
-                    </ul>
-                    <h3><a href="#">The Blue Sky Home</a></h3>
-                    <span className="location">Manila City</span>
-                    <a href="#" className="d-flex align-items-center justify-content-center btn-custom">
-                      <span className="ion-ios-link" />
-                    </a>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
         </section>
         <section className="ftco-section ftco-degree-bg services-section img mx-md-5" style={{backgroundImage: 'url(images/bg_2.jpg)'}}>
           <div className="overlay" />
-          <div className="container">
+          <div className="container ml-5">
             <div className="row justify-content-start mb-5">
-              <div className="col-md-6 text-center heading-section heading-section-white ">
+              <div className="col-md-7 text-center heading-section heading-section-white ">
                 <span className="subheading">Work flow</span>
                 <h2 className="mb-3">How it works</h2>
               </div>
             </div>
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-7">
                 <div className="row">
                   <div className="col-md-12 col-lg-6 d-flex align-self-stretch ">
                     <div className="media block-6 services services-2">
                       <div className="media-body py-md-4 text-center">
                         <div className="icon mb-3 d-flex align-items-center justify-content-center"><span>01</span></div>
                         <h3>Evaluate Property</h3>
-                        <p>Discover Residential, Commercial, and Industrial Real Estate with Ease Discover Residential, Commercial, and Industrial Real Estate with Ease.</p>
+                        <p>Whether you're looking to buy or sell, our expert team conducts a comprehensive assessment to determine its market value and potential. We consider all relevant factors, including location, condition, and market trends, ensuring you get the best possible advice and valuation.</p>
                       </div>
                     </div>      
                   </div>
@@ -179,7 +213,7 @@ const Home = () => {
                       <div className="media-body py-md-4 text-center">
                         <div className="icon mb-3 d-flex align-items-center justify-content-center"><span>02</span></div>
                         <h3>Meet Your Agent</h3>
-                        <p>Discover Residential, Commercial, and Industrial Real Estate with Ease Discover Residential, Commercial, and Industrial Real Estate with Ease.</p>
+                        <p>Once your property evaluation is complete, you'll be introduced to one of our experienced agents. They will guide you through the process, addressing all your questions and concerns. Your agent will be your dedicated point of contact.</p>
                       </div>
                     </div>      
                   </div>
@@ -188,7 +222,7 @@ const Home = () => {
                       <div className="media-body py-md-4 text-center">
                         <div className="icon mb-3 d-flex align-items-center justify-content-center"><span>03</span></div>
                         <h3>Close the Deal</h3>
-                        <p>Discover Residential, Commercial, and Industrial Real Estate with Ease Discover Residential, Commercial, and Industrial Real Estate with Ease.</p>
+                        <p>With the evaluation and consultation done, we move to the negotiation phase. Your agent will leverage their expertise to secure the best deal for you, whether you're buying or selling. We handle all the paperwork, negotiations, and legalities, ensuring a smooth and stress-free transaction.</p>
                       </div>
                     </div>      
                   </div>
@@ -197,7 +231,7 @@ const Home = () => {
                       <div className="media-body py-md-4 text-center">
                         <div className="icon mb-3 d-flex align-items-center justify-content-center"><span>04</span></div>
                         <h3>Have Your Property</h3>
-                        <p>Discover Residential, Commercial, and Industrial Real Estate with Ease Discover Residential, Commercial, and Industrial Real Estate with Ease.</p>
+                        <p>Congratulations! The final step is handing over the keys to your new property or successfully selling your existing one. Our support doesn’t end here; we remain available for any post-deal assistance you may need. Enjoy the peace of mind that comes with knowing you made the right choice with our comprehensive real estate services.</p>
                       </div>
                     </div>      
                   </div>
@@ -206,145 +240,9 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="ftco-section ftco-no-pb">
-          <div className="container">
-            <div className="row no-gutters">
-              <div className="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style={{backgroundImage: 'url(images/about.jpg)'}}>
-              </div>
-              <div className="col-md-6 wrap-about py-md-5 ">
-                <div className="heading-section p-md-5">
-                  <h2 className="mb-4">We Put People First.</h2>
-                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                  <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="ftco-counter img" id="section-counter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6 col-lg-3 justify-content-center counter-wrap ">
-                <div className="block-18 py-4 mb-4">
-                  <div className="text text-border d-flex align-items-center">
-                    <strong className="number" data-number={305}>0</strong>
-                    <span>Area <br />Population</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-lg-3 justify-content-center counter-wrap ">
-                <div className="block-18 py-4 mb-4">
-                  <div className="text text-border d-flex align-items-center">
-                    <strong className="number" data-number={1090}>0</strong>
-                    <span>Total <br />Properties</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-lg-3 justify-content-center counter-wrap ">
-                <div className="block-18 py-4 mb-4">
-                  <div className="text text-border d-flex align-items-center">
-                    <strong className="number" data-number={209}>0</strong>
-                    <span>Average <br />House</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-lg-3 justify-content-center counter-wrap ">
-                <div className="block-18 py-4 mb-4">
-                  <div className="text d-flex align-items-center">
-                    <strong className="number" data-number={67}>0</strong>
-                    <span>Total <br />Branches</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="ftco-section testimony-section">
-          <div className="container">
-            <div className="row justify-content-center mb-5">
-              <div className="col-md-7 text-center heading-section ">
-                <span className="subheading">Testimonial</span>
-                <h2 className="mb-3">Happy Clients</h2>
-              </div>
-            </div>
-            <div className="row ">
-              <div className="col-md-12">
-                <div className="carousel-testimony owl-carousel ">
-                  <div className="item">
-                    <div className="testimony-wrap py-4">
-                      <div className="text">
-                        <p className="mb-4">Discover Residential, Commercial, and Industrial Real Estate with Ease</p>
-                        <div className="d-flex align-items-center">
-                          <div className="user-img" style={{backgroundImage: 'url(images/person_1.jpg)'}} />
-                          <div className="pl-3">
-                            <p className="name">Roger Scott</p>
-                            <span className="position">Marketing Manager</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="testimony-wrap py-4">
-                      <div className="text">
-                        <p className="mb-4">Discover Residential, Commercial, and Industrial Real Estate with Ease</p>
-                        <div className="d-flex align-items-center">
-                          <div className="user-img" style={{backgroundImage: 'url(images/person_2.jpg)'}} />
-                          <div className="pl-3">
-                            <p className="name">Jilliane Elloso</p>
-                            <span className="position">Marketing Manager</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="testimony-wrap py-4">
-                      <div className="text">
-                        <p className="mb-4">Discover Residential, Commercial, and Industrial Real Estate with Ease.</p>
-                        <div className="d-flex align-items-center">
-                          <div className="user-img" style={{backgroundImage: 'url(images/person_3.jpg)'}} />
-                          <div className="pl-3">
-                            <p className="name">Jilliane Elloso</p>
-                            <span className="position">Marketing Manager</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="testimony-wrap py-4">
-                      <div className="text">
-                        <p className="mb-4">Discover Residential, Commercial, and Industrial Real Estate with Ease</p>
-                        <div className="d-flex align-items-center">
-                          <div className="user-img" style={{backgroundImage: 'url(images/person_1.jpg)'}} />
-                          <div className="pl-3">
-                            <p className="name">Jilliane Elloso</p>
-                            <span className="position">Marketing Manager</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="testimony-wrap py-4">
-                      <div className="text">
-                        <p className="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div className="d-flex align-items-center">
-                          <div className="user-img" style={{backgroundImage: 'url(images/person_2.jpg)'}} />
-                          <div className="pl-3">
-                            <p className="name">Jilliane Elloso</p>
-                            <span className="position">Marketing Manager</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+       
+        
+       
         <section className="ftco-section ftco-agent ftco-no-pt">
         
         </section>

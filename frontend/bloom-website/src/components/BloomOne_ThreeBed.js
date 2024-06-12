@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
 
-const Property = () => {
+const BloomOne_ThreeBed = () => {
   return (
     <div>
 
@@ -298,4 +298,4 @@ const Property = () => {
   );
 };
 
-export default Property;
+export default BloomOne_ThreeBed;

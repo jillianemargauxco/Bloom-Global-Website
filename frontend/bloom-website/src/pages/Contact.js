@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   // Any component-specific logic can go here
@@ -15,7 +16,7 @@ const Contact = () => {
           <div className="container">
             <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
               <div className="col-md-9 pb-5 text-center">
-                <p className="breadcrumbs"><span className="mr-2"><a href="index.html">Home <i className="ion-ios-arrow-forward" /></a></span> <span>Contact <i className="ion-ios-arrow-forward" /></span></p>
+                <p className="breadcrumbs"><span className="mr-2"><Link to="/">Home <i className="ion-ios-arrow-forward" /></Link></span> <span>Contact <i className="ion-ios-arrow-forward" /></span></p>
                 <h1 className="mb-3 bread">Contact us</h1>
               </div>
             </div>

@@ -1,10 +1,9 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import { GiInjustice } from "react-icons/gi";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { FaHandshake } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-
+import { GoLaw } from "react-icons/go";
 
 const AboutUs = () => {
   // Any component-specific logic can go here
@@ -126,7 +125,7 @@ const AboutUs = () => {
                             <div className="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay={100}>
                               <div className="media-29191 text-center h-100">
                                 <div className="media-29191-icon">
-                                    <GiInjustice style={{ color: '#CDA375', fontSize: '48px' }} />
+                                    <GoLaw style={{ color: '#CDA375', fontSize: '48px' }} />
                                 </div>
                                 <h3>Honor & Fairness</h3>
                                 <p>We uphold the values of integrity and fairness in all our

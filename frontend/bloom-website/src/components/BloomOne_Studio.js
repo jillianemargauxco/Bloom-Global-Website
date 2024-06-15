@@ -7,14 +7,12 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { FaArrowCircleLeft } from "react-icons/fa";
-import { FaArrowCircleRight } from "react-icons/fa";
 
 
 
 
 
-const BloomOne_Studio = () => {
+const BloomOneStudio = () => {
   return (
     <div>
 
@@ -27,7 +25,7 @@ const BloomOne_Studio = () => {
             <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
               <div className="col-md-9 pb-5 text-center">
                 <p className="breadcrumbs"><span className="mr-2"><Link to="/">Home <i className="ion-ios-arrow-forward" /></Link></span> <span>Properties <i className="ion-ios-arrow-forward" /></span></p>
-                <h1 className="mb-3 bread">Bloom One : Studio Unit</h1> 
+                <h1 className="mb-3 bread" style={{fontFamily:"Ogg", color:'#243E5E', fontSize:'5rem'}}>Bloom One : Studio Unit</h1> 
               </div>
             </div>
           </div>
@@ -64,13 +62,13 @@ const BloomOne_Studio = () => {
                   <div className="img" style={{backgroundImage: 'url(images/work-1.jpg)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                  <div className="img" style={{backgroundImage: 'url(images/work-1.jpg)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/work-1.jpg)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                  <div className="img" style={{backgroundImage: 'url(images/work-1.jpg)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/work-1.jpg)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                  <div className="img" style={{backgroundImage: 'url(images/work-1.jpg)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/work-1.jpg)'}} />
                     </SwiperSlide>
                     </Swiper>
                     <div className='slider-controller'>
@@ -95,15 +93,15 @@ const BloomOne_Studio = () => {
               <div className="col-md-12 pills">
                 <div className="bd-example bd-example-tabs">
                   <div className="d-flex justify-content-center">
-                    <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                      <li className="nav-item">
-                        <a className="nav-link active" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-description" aria-expanded="true">Features</a>
+                    <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist" style={{ color: '#CDA375' }}>
+                      <li className="nav-item" style={{ color: '#CDA375' }}>
+                        <a className="nav-link active" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-description" aria-expanded="true" style={{ color: '#CDA375' }}>Features</a>
                       </li>
-                      <li className="nav-item">
-                        <a className="nav-link" id="pills-manufacturer-tab" data-toggle="pill" href="#pills-manufacturer" role="tab" aria-controls="pills-manufacturer" aria-expanded="true">Description</a>
+                      <li className="nav-item" style={{ color: '#CDA375' }}> 
+                        <a className="nav-link" id="pills-manufacturer-tab" data-toggle="pill" href="#pills-manufacturer" role="tab" aria-controls="pills-manufacturer" aria-expanded="true" style={{ color: '#CDA375' }}>Description</a>
                       </li>
-                      <li className="nav-item">
-                        <a className="nav-link" id="pills-review-tab" data-toggle="pill" href="#pills-review" role="tab" aria-controls="pills-review" aria-expanded="true">Construction Updates</a>
+                      <li className="nav-item" style={{ color: '#CDA375' }}>
+                        <a className="nav-link" id="pills-review-tab" data-toggle="pill" href="#pills-review" role="tab" aria-controls="pills-review" aria-expanded="true" style={{ color: '#CDA375' }}>Construction Updates</a>
                       </li>
                     </ul>
                   </div>
@@ -112,32 +110,32 @@ const BloomOne_Studio = () => {
                       <div className="row">
                         <div className="col-md-4">
                           <ul className="features">
-                            <li className="check"><span className="ion-ios-checkmark" />Lot Area: 20 sqm</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Bed Rooms: 1</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Bath Rooms: 1</li>
+                            <li><strong>Property Details</strong></li>
+                            <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/>Lot Area: 20 sqm</li>
+                            <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/>Bed Rooms: 1</li>
+                            <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/>Bath Rooms: 1</li>
                           </ul>
                         </div>
                         <div className="col-md-4">
                           <ul className="features">
-                          <li className="check"><span className="ion-ios-checkmark" /> Parking</li>
-                          <li className="check"><span className="ion-ios-checkmark" /> Built-in Kitchen, sink, and stove</li>
-                          <li className="check"><span className="ion-ios-checkmark" /> Toilet and bath</li>
-                          <li className="check"><span className="ion-ios-checkmark" /> Balcony</li>
-                          <li className="check"><span className="ion-ios-checkmark" /> Dry Clothing area</li>
-                          <li className="check"><span className="ion-ios-checkmark" /> Rooftop Lounge area</li>
-                          <li className="check"><span className="ion-ios-checkmark" /> Mail room</li>
-                          <li className="check"><span className="ion-ios-checkmark" /> Gym</li>
-                          <li className="check"><span className="ion-ios-checkmark" /> Lobby</li>
-                          <li className="check"><span className="ion-ios-checkmark" /> Security</li>
+                          <li><strong>Amenities</strong></li>
+                          <li className="check" ><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Parking</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Built-in Kitchen, sink, and stove</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/>Toilet and bath</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Balcony</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Dry Clothing area</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Rooftop Lounge area</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Mail room</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Gym</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Lobby</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Security</li>
                           </ul>
                         </div>
                         <div className="col-md-4">
                           <ul className="features">
-                            <li className="check"><span className="ion-ios-checkmark" />Floor Area: 1,300 SQ FT</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Year Build:: 2019</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Water</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Stories: 2</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Roofing: New</li>
+                            <li className="check"><span className="ion-ios-time" style={{ color: '#CDA375' }} />Target Completion: February 2025</li>
+                            <li className="check"><span className="ion-ios-pin" style={{ color: '#CDA375' }} />Complete Address: Congressional Avenue, Quezon City</li>
+
                           </ul>
                         </div>
                       </div>
@@ -169,7 +167,6 @@ const BloomOne_Studio = () => {
                         <div className="col-md-7">
                
                           <div className="review d-flex">
-                            <div className="user-img" style={{backgroundImage: 'url(images/person_1.jpg)'}} />
                             <div className="desc">
                               <h4>
                                 <span className="text-left">Site Preparation</span>
@@ -187,9 +184,9 @@ const BloomOne_Studio = () => {
                             <h3 className="head">Photo Gallery</h3>
                             <div className="photo-gallery">
                             <div className="column">
-                                <div className="photo grid-item"><img src="images/about.png" alt="Photo 1" /></div>
-                                <div className="photo grid-item"><img src="images/about.png" alt="Photo 2" /></div>
-                                <div className="photo grid-item"><img src="images/about.png" alt="Photo 3" /></div>
+                                <div className="photo grid-item"><img src="images/site-1.JPG" alt="Bloom One Studio Type"/></div>
+                                <div className="photo grid-item"><img src="images/site-2.JPG" alt="Bloom One Studio Type"/></div>
+                                <div className="photo grid-item"><img src="images/site-3.JPG" alt="Bloom One Studio Type"/></div>
                             </div>
                             </div>
                           </div>
@@ -223,8 +220,8 @@ const BloomOne_Studio = () => {
                 <div className="ftco-footer-widget mb-4 ml-md-4">
                   <h2 className="ftco-heading-2">Community</h2>
                   <ul className="list-unstyled">
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Search Properties</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />FAQs</a></li>
+                    <li><Link to="/properties"><span className="icon-long-arrow-right mr-2" />Search Properties</Link></li>
+                    <li><Link to="/services"><span className="icon-long-arrow-right mr-2" />FAQs</Link></li>
                   </ul>
                 </div>
               </div>
@@ -232,9 +229,9 @@ const BloomOne_Studio = () => {
                 <div className="ftco-footer-widget mb-4 ml-md-4">
                   <h2 className="ftco-heading-2">About Us</h2>
                   <ul className="list-unstyled">
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Services</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Vision & Mission</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Core Values</a></li>
+                    <li><Link to="/services"><span className="icon-long-arrow-right mr-2" />Services</Link></li>
+                    <li><Link to="/about-us"><span className="icon-long-arrow-right mr-2" />Vision & Mission</Link></li>
+                    <li><Link to="/about-us"><span className="icon-long-arrow-right mr-2" />Core Values</Link></li>
                   </ul>
                 </div>
               </div>
@@ -242,8 +239,8 @@ const BloomOne_Studio = () => {
                 <div className="ftco-footer-widget mb-4">
                   <h2 className="ftco-heading-2">Company</h2>
                   <ul className="list-unstyled">
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />About Us</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Contact</a></li>
+                    <li><Link to="/about-us"><span className="icon-long-arrow-right mr-2" />About Us</Link></li>
+                    <li><Link to="/contact"><span className="icon-long-arrow-right mr-2" />Contact</Link></li>
                   </ul>
                 </div>
               </div>
@@ -263,6 +260,7 @@ const BloomOne_Studio = () => {
           </div>
         </footer>
        
+       
       </div>
 
 
@@ -271,4 +269,4 @@ const BloomOne_Studio = () => {
   );
 };
 
-export default BloomOne_Studio;
+export default BloomOneStudio;

@@ -1,23 +1,85 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from '../components/Navbar';
 import { BsBuildingFillGear } from "react-icons/bs";
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import { MdManageAccounts } from "react-icons/md";
 import { FaHandshakeAngle } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
 
 
 const Home = () => {
-  // Any component-specific logic can go here
+
+  const propertyList = [
+    {
+      propertyName: 'Bloom One',
+      propertyType: 'Residential',
+      unitType: 'Studio',
+      location: 'Congressional Avenue, Quezon City',
+      size: 20,
+      price: 18000,
+      bed: 1,
+      bath: 1,
+      imgUrl: 'images/work-2.jpg',
+      link: '/bloom-one-studio',
+    },
+    {
+      propertyName: 'Bloom One',
+      propertyType: 'Residential',
+      unitType: 'One Bedroom',
+      location: 'Congressional Avenue, Quezon City',
+      size: 30,
+      price: 25000,
+      bed: 1,
+      bath: 1,
+      imgUrl: 'images/work-2.jpg',
+      link: '/bloom-one-one-bedroom'
+    },
+    {
+      propertyName: 'Bloom One',
+      propertyType: 'Residential',
+      unitType: 'Two Bedroom',
+      location: 'Congressional Avenue, Quezon City',
+      size: 60,
+      price: 40000,
+      bed: 2,
+      bath: 1,
+      imgUrl: 'images/work-2.jpg',
+      link: '/bloom-one-two-bedroom'
+    },
+    {
+      propertyName: 'Bloom One',
+      propertyType: 'Residential',
+      unitType: 'Three Bedroom',
+      location: 'Congressional Avenue, Quezon City',
+      size: 90,
+      price: 60000,
+      bed: 3,
+      bath: 2,
+      imgUrl: 'images/work-2.jpg',
+      link: '/bloom-one-three-bedroom'
+    }
+  ];
+  
+
+  const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();
+
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+    navigate(`/properties?search=${searchQuery}`);
+  };
 
   return (
     <div className="page">
      <Navbar/>
      <div>
-       
         <div className="hero-wrap ftco-degree-bg" style={{backgroundImage: 'url("images/bg_1.png")'}} data-stellar-background-ratio="0.5">
           <div className="overlay" />
           <div className="container">
@@ -26,28 +88,60 @@ const Home = () => {
                 <div className="text text-center" data-aos="fade-up">
                   <h1 className="mb-4" style={{fontFamily:"Ogg", color:'#243E5E', fontSize:'5rem'}}>Where Every Property <br/> Blooms</h1>
                   <p style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}}>At Bloom Global Estate & Development, we transform your real estate aspirations into reality. Partner with us to discover exceptional service and unmatched expertise in the world of real estate.</p>
-                  <form action="#" className="search-location mt-md-5" data-aos="fade-up">
+                  <form className="search-location mt-md-5" data-aos="fade-up" onSubmit={handleSearchSubmit}>
                     <div className="row justify-content-center">
                       <div className="col-lg-10 align-items-end">
                         <div className="form-group">
                           <div className="form-field">
-                            <input type="text" className="form-control" placeholder="Search location" />
+                          <input type="search" className="form-control" placeholder="Search" value={searchQuery} onChange={handleSearchChange} />
                             <button><span className="ion-ios-search" /></button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </form>
+                 
                 </div>
               </div>
             </div>
           </div>
-          <div className="mouse">
-            <a href="#" className="mouse-icon">
-              <div className="mouse-wheel"><span className="ion-ios-arrow-round-down" /></div>
-            </a>
-          </div>
+        
         </div>
+        <section className="ftco-section go-to-here">
+          <div className="container">
+          <div className="row justify-content-center">
+              <div className="col-md-12 heading-section text-center  mb-5">
+                <span className="subheading" data-aos="fade-up">Our Properties</span>
+                <h2 className="mb-2" data-aos="fade-up">Check Out Our Upcoming Project</h2>
+              </div>
+            </div>
+            <div className="row">
+            {propertyList.map((property, index) => (
+            <div className="col-md-3" key={index}>
+              <div className="property-wrap">
+                <Link to={property.link} className="img" style={{ backgroundImage: `url(${property.imgUrl})` }} />
+                <div className="text">
+                  <p className="price">
+                    <span className="orig-price">₱ {property.price.toLocaleString()}<small>/mo</small></span>
+                  </p>
+                  <ul className="property_list">
+                    <li><span className="flaticon-bed" />{property.bed}</li>
+                    <li><span className="flaticon-bathtub" />{property.bath}</li>
+                    <li><span className="flaticon-floor-plan" />{property.size} sqm</li>
+                  </ul>
+                  <h3><Link to={property.link}>{property.propertyName} : {property.unitType} Unit</Link></h3>
+                  <span className="location">{property.location}</span>
+                  <Link to={property.link} className="d-flex align-items-center justify-content-center btn-custom">
+                    <span className="ion-ios-link" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+            
+            </div>
+          </div>
+        </section>
         <section className="ftco-section ftco-no-pb">
           <div className="container" >
             <div className="row no-gutters">
@@ -151,42 +245,8 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="ftco-section goto-here">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-md-12 heading-section text-center  mb-5">
-                <span className="subheading">Upcoming Projects</span>
-                <h2 className="mb-2">Check out our project</h2>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-4">
-              
-              </div>
-              <div className="col-md-4">
-                <div className="property-wrap ">
-                  <a href="#" className="img" style={{backgroundImage: 'url(images/work-2.jpg)'}} />
-                  <div className="text">
-                    <p className="price"><span className="old-price">800,000</span><span className="orig-price">$3,050<small>/mo</small></span></p>
-                    <ul className="property_list">
-                      <li><span className="flaticon-bed" />3</li>
-                      <li><span className="flaticon-bathtub" />2</li>
-                      <li><span className="flaticon-floor-plan" />1,878 sqft</li>
-                    </ul>
-                    <h3><a href="#">The Blue Sky Home</a></h3>
-                    <span className="location">Quezon City</span>
-                    <a href="#" className="d-flex align-items-center justify-content-center btn-custom">
-                      <span className="ion-ios-link" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4">
-                
-              </div>
-            </div>
-          </div>
-        </section>
+       
+       
         <section className="ftco-section ftco-degree-bg services-section img mx-md-5" style={{backgroundImage: 'url(images/bg_2.jpg)'}}>
           <div className="overlay" />
           <div className="container ml-5">
@@ -258,58 +318,12 @@ const Home = () => {
               <div className="col-md-3 d-flex ">
                 <div className="blog-entry justify-content-end">
                   <div className="text">
-                    <h3 className="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                    <h3 className="heading"><Link to="/properties">Bloom One : Our First Project</Link></h3>
                     <div className="meta mb-3">
-                      <div><a href="#">July. 24, 2019</a></div>
-                      <div><a href="#">Admin</a></div>
-                      <div><a href="#" className="meta-chat"><span className="icon-chat" /> 3</a></div>
+                      <div><Link to="/properties">June 16, 2024</Link></div>
+                      <div><Link to="/properties">Admin</Link></div>
                     </div>
                     <a href="blog-single.html" className="block-20 img" style={{backgroundImage: 'url("images/image_1.jpg")'}}>
-                    </a>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 d-flex ">
-                <div className="blog-entry justify-content-end">
-                  <div className="text">
-                    <h3 className="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                    <div className="meta mb-3">
-                      <div><a href="#">July. 24, 2019</a></div>
-                      <div><a href="#">Admin</a></div>
-                      <div><a href="#" className="meta-chat"><span className="icon-chat" /> 3</a></div>
-                    </div>
-                    <a href="blog-single.html" className="block-20 img" style={{backgroundImage: 'url("images/image_2.jpg")'}}>
-                    </a>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 d-flex ">
-                <div className="blog-entry justify-content-end">
-                  <div className="text">
-                    <h3 className="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                    <div className="meta mb-3">
-                      <div><a href="#">July. 24, 2019</a></div>
-                      <div><a href="#">Admin</a></div>
-                      <div><a href="#" className="meta-chat"><span className="icon-chat" /> 3</a></div>
-                    </div>
-                    <a href="blog-single.html" className="block-20 img" style={{backgroundImage: 'url("images/image_3.jpg")'}}>
-                    </a>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 d-flex ">
-                <div className="blog-entry justify-content-end">
-                  <div className="text">
-                    <h3 className="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                    <div className="meta mb-3">
-                      <div><a href="#">July. 24, 2019</a></div>
-                      <div><a href="#">Admin</a></div>
-                      <div><a href="#" className="meta-chat"><span className="icon-chat" /> 3</a></div>
-                    </div>
-                    <a href="blog-single.html" className="block-20 img" style={{backgroundImage: 'url("images/image_4.jpg")'}}>
                     </a>
                     <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                   </div>
@@ -338,8 +352,8 @@ const Home = () => {
                 <div className="ftco-footer-widget mb-4 ml-md-4">
                   <h2 className="ftco-heading-2">Community</h2>
                   <ul className="list-unstyled">
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Search Properties</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />FAQs</a></li>
+                    <li><Link to="/properties"><span className="icon-long-arrow-right mr-2" />Search Properties</Link></li>
+                    <li><Link to="/services"><span className="icon-long-arrow-right mr-2" />FAQs</Link></li>
                   </ul>
                 </div>
               </div>
@@ -347,9 +361,9 @@ const Home = () => {
                 <div className="ftco-footer-widget mb-4 ml-md-4">
                   <h2 className="ftco-heading-2">About Us</h2>
                   <ul className="list-unstyled">
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Services</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Vision & Mission</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Core Values</a></li>
+                    <li><Link to="/services"><span className="icon-long-arrow-right mr-2" />Services</Link></li>
+                    <li><Link to="/about-us"><span className="icon-long-arrow-right mr-2" />Vision & Mission</Link></li>
+                    <li><Link to="/about-us"><span className="icon-long-arrow-right mr-2" />Core Values</Link></li>
                   </ul>
                 </div>
               </div>
@@ -357,8 +371,8 @@ const Home = () => {
                 <div className="ftco-footer-widget mb-4">
                   <h2 className="ftco-heading-2">Company</h2>
                   <ul className="list-unstyled">
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />About Us</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Contact</a></li>
+                    <li><Link to="/about-us"><span className="icon-long-arrow-right mr-2" />About Us</Link></li>
+                    <li><Link to="/contact"><span className="icon-long-arrow-right mr-2" />Contact</Link></li>
                   </ul>
                 </div>
               </div>
@@ -377,6 +391,7 @@ const Home = () => {
             </div>
           </div>
         </footer>
+       
   
 
     

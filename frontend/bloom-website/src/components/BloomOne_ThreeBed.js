@@ -1,22 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import {EffectCoverflow, Pagination, Navigation} from 'swiper/modules';
+import {Swiper,SwiperSlide} from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 
-const BloomOne_ThreeBed = () => {
+
+const BloomOneThreeBed = () => {
   return (
     <div>
 
 <div>
        <Navbar/>
         {/* END nav */}
-        <section className="hero-wrap hero-wrap-2 ftco-degree-bg js-fullheight" style={{backgroundImage: 'url("images/bg_1.jpg")'}} data-stellar-background-ratio="0.5">
+        <section className="hero-wrap hero-wrap-2 ftco-degree-bg js-fullheight" style={{backgroundImage: 'url("images/bg_1.png")'}} data-stellar-background-ratio="0.5">
           <div className="overlay" />
           <div className="container">
             <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-              <div className="col-md-9 ftco-animate pb-5 text-center">
-                <p className="breadcrumbs"><span className="mr-2"><a href="index.html">Home <i className="ion-ios-arrow-forward" /></a></span> <span>Properties <i className="ion-ios-arrow-forward" /></span></p>
-                <h1 className="mb-3 bread">Properties Single</h1>
+              <div className="col-md-9 pb-5 text-center">
+                <p className="breadcrumbs"><span className="mr-2"><Link to="/">Home <i className="ion-ios-arrow-forward" /></Link></span> <span>Properties <i className="ion-ios-arrow-forward" /></span></p>
+                <h1 className="mb-3 bread" style={{fontFamily:"Ogg", color:'#243E5E', fontSize:'5rem'}}>Bloom One : Three Bedroom Unit</h1> 
               </div>
             </div>
           </div>
@@ -26,27 +33,73 @@ const BloomOne_ThreeBed = () => {
             <div className="row justify-content-center">
               <div className="col-md-12">
                 <div className="property-details">
+                <div className="swiper_container">
+                  <Swiper effect={'coverflow'}
+                          grabCursor={true}
+                          centeredSlides={true}
+                          loop={true}
+                          slidesPerView={"auto"}
+                          coverflowEffect={{
+                            rotate:0,
+                            stretch:0,
+                            depth:100,
+                            modifier:2.5,
+                          }}
+                        pagination={{el:'.swiper-pagination',clickable:true}}
+                        navigation={{
+
+                          nextEl:'.swiper-button-next',
+                          prevEl:'.swiper-button-prev',
+                          clickable:true,
+
+                        }}
+                        modules={[EffectCoverflow,Pagination,Navigation]}
+                        className='.swiper_container'
+                          >
+                    <SwiperSlide>
                   <div className="img" style={{backgroundImage: 'url(images/work-1.jpg)'}} />
-                  <div className="text text-center">
-                    <span className="subheading">Oakland</span>
-                    <h2>The Blue Sky Home</h2>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <div className="img" style={{backgroundImage: 'url(images/work-1.jpg)'}} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <div className="img" style={{backgroundImage: 'url(images/work-1.jpg)'}} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <div className="img" style={{backgroundImage: 'url(images/work-1.jpg)'}} />
+                    </SwiperSlide>
+                    </Swiper>
+                    <div className='slider-controller'>
+                      <div className='swiper-button-prev slider-arrow ml-5' style={{ color: 'white', fontSize: '200px' }}> </div>
+                      <div className='swiper-button-next slider-arrow mr-5' style={{ color: 'white', fontSize: '200px' }}> </div>
+                        <div className='swiper-pagination'>   
+                      </div>
+                    </div>
                   </div>
+
+               
                 </div>
               </div>
             </div>
+            
+            <div className="text text-center">
+                    <span className="subheading">Quezon City</span>
+                    <h2 style={{ color: '#CDA375' }}><strong>Bloom One : Three Bedroom Unit</strong></h2>
+                  </div>
+
             <div className="row">
               <div className="col-md-12 pills">
                 <div className="bd-example bd-example-tabs">
                   <div className="d-flex justify-content-center">
-                    <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                      <li className="nav-item">
-                        <a className="nav-link active" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-description" aria-expanded="true">Features</a>
+                    <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist" style={{ color: '#CDA375' }}>
+                      <li className="nav-item" style={{ color: '#CDA375' }}>
+                        <a className="nav-link active" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-description" aria-expanded="true" style={{ color: '#CDA375' }}>Features</a>
                       </li>
-                      <li className="nav-item">
-                        <a className="nav-link" id="pills-manufacturer-tab" data-toggle="pill" href="#pills-manufacturer" role="tab" aria-controls="pills-manufacturer" aria-expanded="true">Description</a>
+                      <li className="nav-item" style={{ color: '#CDA375' }}> 
+                        <a className="nav-link" id="pills-manufacturer-tab" data-toggle="pill" href="#pills-manufacturer" role="tab" aria-controls="pills-manufacturer" aria-expanded="true" style={{ color: '#CDA375' }}>Description</a>
                       </li>
-                      <li className="nav-item">
-                        <a className="nav-link" id="pills-review-tab" data-toggle="pill" href="#pills-review" role="tab" aria-controls="pills-review" aria-expanded="true">Review</a>
+                      <li className="nav-item" style={{ color: '#CDA375' }}>
+                        <a className="nav-link" id="pills-review-tab" data-toggle="pill" href="#pills-review" role="tab" aria-controls="pills-review" aria-expanded="true" style={{ color: '#CDA375' }}>Construction Updates</a>
                       </li>
                     </ul>
                   </div>
@@ -55,164 +108,88 @@ const BloomOne_ThreeBed = () => {
                       <div className="row">
                         <div className="col-md-4">
                           <ul className="features">
-                            <li className="check"><span className="ion-ios-checkmark" />Lot Area: 1,250 SQ FT</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Bed Rooms: 4</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Bath Rooms: 4</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Luggage</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Garage: 2</li>
+                            <li><strong>Property Details</strong></li>
+                            <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/>Lot Area: 20 sqm</li>
+                            <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/>Bed Rooms: 1</li>
+                            <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/>Bath Rooms: 1</li>
                           </ul>
                         </div>
                         <div className="col-md-4">
                           <ul className="features">
-                            <li className="check"><span className="ion-ios-checkmark" />Floor Area: 1,300 SQ FT</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Year Build:: 2019</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Water</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Stories: 2</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Roofing: New</li>
+                          <li><strong>Amenities</strong></li>
+                          <li className="check" ><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Parking</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Built-in Kitchen, sink, and stove</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/>Toilet and bath</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Balcony</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Dry Clothing area</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Rooftop Lounge area</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Mail room</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Gym</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Lobby</li>
+                          <li className="check"><span className="ion-ios-checkmark" style={{ color: '#CDA375' }}/> Security</li>
                           </ul>
                         </div>
                         <div className="col-md-4">
                           <ul className="features">
-                            <li className="check"><span className="ion-ios-checkmark" />Floor Area: 1,300 SQ FT</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Year Build:: 2019</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Water</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Stories: 2</li>
-                            <li className="check"><span className="ion-ios-checkmark" />Roofing: New</li>
+                            <li className="check"><span className="ion-ios-time" style={{ color: '#CDA375' }} />Target Completion: February 2025</li>
+                            <li className="check"><span className="ion-ios-pin" style={{ color: '#CDA375' }} />Complete Address: Congressional Avenue, Quezon City</li>
+
                           </ul>
                         </div>
                       </div>
                     </div>
                     <div className="tab-pane fade" id="pills-manufacturer" role="tabpanel" aria-labelledby="pills-manufacturer-tab">
-                      <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                      <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                      <p>Introducing our modern and affordable townhouses for sale, promising a harmonious blend of style, functionality, and value.</p>
+                      <p>Located in a vibrant community,
+                          these townhouses are
+                          thoughtfully designed to cater to
+                          the dynamic lifestyles of today's
+                          urban dwellers. With sleek and
+                          contemporary architecture, these
+                          homes boast clean lines, ample
+                          natural light, and efficient use of
+                          space, creating a modern living
+                          environment that is both inviting
+                          and practical.</p>
+                          <p>Each townhouse features a versatile
+                              layout, offering flexible living spaces
+                              that can be customized to suit
+                              individual needs. The open-plan
+                              design seamlessly integrates the
+                              living, dining, and kitchen areas,
+                              providing a sense of connectivity
+                              and fluidity throughout the home.</p>
                     </div>
                     <div className="tab-pane fade" id="pills-review" role="tabpanel" aria-labelledby="pills-review-tab">
                       <div className="row">
                         <div className="col-md-7">
-                          <h3 className="head">23 Reviews</h3>
+               
                           <div className="review d-flex">
-                            <div className="user-img" style={{backgroundImage: 'url(images/person_1.jpg)'}} />
                             <div className="desc">
                               <h4>
-                                <span className="text-left">Jacob Webb</span>
-                                <span className="text-right">14 March 2018</span>
+                                <span className="text-left">Site Preparation</span>
+                                <span className="text-right">June 2024</span>
                               </h4>
-                              <p className="star">
-                                <span>
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                </span>
-                                <span className="text-right"><a href="#" className="reply"><i className="icon-reply" /></a></span>
-                              </p>
-                              <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
+                              <p>The construction team has successfully completed site clearing and grading. This crucial step ensures that the ground is properly leveled and ready for foundation work.
+                              Initial excavation work has been completed to prepare for the foundation pouring.</p>
                             </div>
                           </div>
-                          <div className="review d-flex">
-                            <div className="user-img" style={{backgroundImage: 'url(images/person_2.jpg)'}} />
-                            <div className="desc">
-                              <h4>
-                                <span className="text-left">Jacob Webb</span>
-                                <span className="text-right">14 March 2018</span>
-                              </h4>
-                              <p className="star">
-                                <span>
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                </span>
-                                <span className="text-right"><a href="#" className="reply"><i className="icon-reply" /></a></span>
-                              </p>
-                              <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
-                            </div>
-                          </div>
-                          <div className="review d-flex">
-                            <div className="user-img" style={{backgroundImage: 'url(images/person_3.jpg)'}} />
-                            <div className="desc">
-                              <h4>
-                                <span className="text-left">Jacob Webb</span>
-                                <span className="text-right">14 March 2018</span>
-                              </h4>
-                              <p className="star">
-                                <span>
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                </span>
-                                <span className="text-right"><a href="#" className="reply"><i className="icon-reply" /></a></span>
-                              </p>
-                              <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
-                            </div>
-                          </div>
+                          
+                      
                         </div>
                         <div className="col-md-5">
-                          <div className="rating-wrap">
-                            <h3 className="head">Give a Review</h3>
-                            <div className="wrap">
-                              <p className="star">
-                                <span>
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  (98%)
-                                </span>
-                                <span>20 Reviews</span>
-                              </p>
-                              <p className="star">
-                                <span>
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  (85%)
-                                </span>
-                                <span>10 Reviews</span>
-                              </p>
-                              <p className="star">
-                                <span>
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  (70%)
-                                </span>
-                                <span>5 Reviews</span>
-                              </p>
-                              <p className="star">
-                                <span>
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  (10%)
-                                </span>
-                                <span>0 Reviews</span>
-                              </p>
-                              <p className="star">
-                                <span>
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  <i className="ion-ios-star" />
-                                  (0%)
-                                </span>
-                                <span>0 Reviews</span>
-                              </p>
+                          <div className="image-container">
+                            <h3 className="head">Photo Gallery</h3>
+                            <div className="photo-gallery">
+                            <div className="column">
+                                <div className="photo grid-item"><img src="images/site-1.JPG" alt="Bloom One Studio Type"/></div>
+                                <div className="photo grid-item"><img src="images/site-2.JPG" alt="Bloom One Studio Type"/></div>
+                                <div className="photo grid-item"><img src="images/site-3.JPG" alt="Bloom One Studio Type"/></div>
+                            </div>
                             </div>
                           </div>
                         </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -241,8 +218,8 @@ const BloomOne_ThreeBed = () => {
                 <div className="ftco-footer-widget mb-4 ml-md-4">
                   <h2 className="ftco-heading-2">Community</h2>
                   <ul className="list-unstyled">
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Search Properties</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />FAQs</a></li>
+                    <li><Link to="/properties"><span className="icon-long-arrow-right mr-2" />Search Properties</Link></li>
+                    <li><Link to="/services"><span className="icon-long-arrow-right mr-2" />FAQs</Link></li>
                   </ul>
                 </div>
               </div>
@@ -250,9 +227,9 @@ const BloomOne_ThreeBed = () => {
                 <div className="ftco-footer-widget mb-4 ml-md-4">
                   <h2 className="ftco-heading-2">About Us</h2>
                   <ul className="list-unstyled">
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Services</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Vision & Mission</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Core Values</a></li>
+                    <li><Link to="/services"><span className="icon-long-arrow-right mr-2" />Services</Link></li>
+                    <li><Link to="/about-us"><span className="icon-long-arrow-right mr-2" />Vision & Mission</Link></li>
+                    <li><Link to="/about-us"><span className="icon-long-arrow-right mr-2" />Core Values</Link></li>
                   </ul>
                 </div>
               </div>
@@ -260,8 +237,8 @@ const BloomOne_ThreeBed = () => {
                 <div className="ftco-footer-widget mb-4">
                   <h2 className="ftco-heading-2">Company</h2>
                   <ul className="list-unstyled">
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />About Us</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Contact</a></li>
+                    <li><Link to="/about-us"><span className="icon-long-arrow-right mr-2" />About Us</Link></li>
+                    <li><Link to="/contact"><span className="icon-long-arrow-right mr-2" />Contact</Link></li>
                   </ul>
                 </div>
               </div>
@@ -281,6 +258,7 @@ const BloomOne_ThreeBed = () => {
           </div>
         </footer>
        
+       
       </div>
 
 
@@ -289,4 +267,4 @@ const BloomOne_ThreeBed = () => {
   );
 };
 
-export default BloomOne_ThreeBed;
+export default BloomOneThreeBed;

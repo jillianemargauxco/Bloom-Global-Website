@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
-import BloomOne_Studio from '../components/BloomOne_Studio';
-import BloomOne_OneBed from '../components/BloomOne_OneBed';
-import BloomOne_TwoBed from '../components/BloomOne_TwoBed';
-import BloomOne_ThreeBed from '../components/BloomOne_ThreeBed';
 import { Row, Col } from 'react-bootstrap';
 import { FaSearch, FaSort, FaFilter } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
+
+
+const useQuery = () => {
+  return new URLSearchParams(useLocation().search);
+};
+
 
 const Properties = () => {
   
@@ -60,10 +62,16 @@ const Properties = () => {
       link: '/bloom-one-three-bedroom'
     }
   ];
-
-  const [searchQuery, setSearchQuery] = useState('');
+  const query = useQuery();
+  const initialSearchQuery = query.get('search') || '';
+  const [searchQuery, setSearchQuery] = useState(initialSearchQuery);
   const [filter, setFilter] = useState('');
   const [sort, setSort] = useState('');
+
+  useEffect(() => {
+    setSearchQuery(initialSearchQuery);
+  }, [initialSearchQuery]);
+
 
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
@@ -124,7 +132,7 @@ const Properties = () => {
             <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
               <div className="col-md-9 pb-5 text-center">
                 <p className="breadcrumbs"><span className="mr-2"><Link to="/">Home <i className="ion-ios-arrow-forward" /></Link></span> <span>Properties <i className="ion-ios-arrow-forward" /></span></p>
-                <h1 className="mb-3 bread">Choose A Property <br />Right For You</h1>
+                <h1 className="mb-3 bread" data-aos="fade-up" style={{fontFamily:"Ogg", color:'#243E5E', fontSize:'5rem'}}>Choose A Property <br />Right For You</h1>
               </div>
             </div>
           </div>
@@ -211,20 +219,6 @@ const Properties = () => {
               </div>
             </div>
           ))}
-
-           
-            </div>
-
-            <div className="row mt-5">
-              <div className="col text-center">
-                <div className="block-27">
-                  <ul>
-                    <li><a href="#">&lt;</a></li>
-                    <li className="active"><span>1</span></li>
-                    <li><a href="#">&gt;</a></li>
-                  </ul>
-                </div>
-              </div>
             </div>
 
           </div>
@@ -249,8 +243,8 @@ const Properties = () => {
                 <div className="ftco-footer-widget mb-4 ml-md-4">
                   <h2 className="ftco-heading-2">Community</h2>
                   <ul className="list-unstyled">
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Search Properties</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />FAQs</a></li>
+                    <li><Link to="/properties"><span className="icon-long-arrow-right mr-2" />Search Properties</Link></li>
+                    <li><Link to="/services"><span className="icon-long-arrow-right mr-2" />FAQs</Link></li>
                   </ul>
                 </div>
               </div>
@@ -258,9 +252,9 @@ const Properties = () => {
                 <div className="ftco-footer-widget mb-4 ml-md-4">
                   <h2 className="ftco-heading-2">About Us</h2>
                   <ul className="list-unstyled">
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Services</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Vision & Mission</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Core Values</a></li>
+                    <li><Link to="/services"><span className="icon-long-arrow-right mr-2" />Services</Link></li>
+                    <li><Link to="/about-us"><span className="icon-long-arrow-right mr-2" />Vision & Mission</Link></li>
+                    <li><Link to="/about-us"><span className="icon-long-arrow-right mr-2" />Core Values</Link></li>
                   </ul>
                 </div>
               </div>
@@ -268,8 +262,8 @@ const Properties = () => {
                 <div className="ftco-footer-widget mb-4">
                   <h2 className="ftco-heading-2">Company</h2>
                   <ul className="list-unstyled">
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />About Us</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2" />Contact</a></li>
+                    <li><Link to="/about-us"><span className="icon-long-arrow-right mr-2" />About Us</Link></li>
+                    <li><Link to="/contact"><span className="icon-long-arrow-right mr-2" />Contact</Link></li>
                   </ul>
                 </div>
               </div>
@@ -288,6 +282,7 @@ const Properties = () => {
             </div>
           </div>
         </footer>
+       
         
       </div>
     </div>

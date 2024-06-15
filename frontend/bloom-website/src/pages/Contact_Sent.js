@@ -1,60 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
-import emailjs from '@emailjs/browser';
-import PhoneInput from 'react-phone-input-2'
-import 'react-phone-input-2/lib/style.css'
-import { useNavigate } from "react-router-dom";
 
 
-const Contact = () => {
-  const form = useRef();
-  const navigate = useNavigate();
-
-
-  const [formData, setFormData] = useState({
-    user_name: '',
-    user_email: '',
-    user_contact: '',
-    user_subject: '',
-    user_message: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handlePhoneChange = (value, country, e, formattedValue) => {
-    setFormData({
-      ...formData,
-      user_contact: value
-    });
-  };
-
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm('service_h78de32', 'template_k6qevov', form.current, {
-        publicKey: 'YFJksK3rt1CvyDixn',
-      })
-      .then(
-        () => {
-          console.log(form.current);
-          console.log(formData.user_contact);
-          console.log('Email Sent Successfuly');
-          navigate("/contact-sent");
-          
-        },
-        (error) => {
-          console.log('Email Not Sent Successfuly', error.text);
-        },
-      );
-  };
+const ContactSent = () => {
+  
 
   return (
     <div className="page">
@@ -101,37 +51,8 @@ const Contact = () => {
             </div>
             <div className="row block-9 justify-content-center mb-5">
               <div className="col-md-8 mb-md-5">
-                <h2 className="text-center">If you got any questions <br />please do not hesitate to send us a message</h2>
-                <form ref={form} onSubmit={sendEmail} className="bg-light p-5 contact-form">
-                  <div className="form-group">
-                    <input name="user_name" type="text" value={formData.user_name} onChange={handleChange} className="form-control" placeholder="Your Name" required/>
-                  </div>
-                  <div className="form-group">
-                    <input name="user_email" type="text" value={formData.user_email} onChange={handleChange} className="form-control" placeholder="Your Email" required />
-                  </div>
-                  <div className="form-group">
-                  <PhoneInput
-                    name="user_contact"
-                    country={'ph'}
-                    value={formData.user_contact}
-                    onChange={handlePhoneChange}
-                    inputProps={{
-                      required: true,
-                      autoFocus: true
-                    }}
-                  />
-                    
-                  </div>
-                  <div className="form-group">
-                    <input name="user_subject" type="text" value={formData.user_subject} onChange={handleChange} className="form-control" placeholder="Subject" required/>
-                  </div>
-                  <div className="form-group">
-                    <textarea name="user_message" id cols={30} rows={7} value={formData.user_message} onChange={handleChange} className="form-control" placeholder="Message" defaultValue={""} required/>
-                  </div>
-                  <div className="form-group">
-                    <input type="submit" defaultValue="Send Message" className="btn btn-primary py-3 px-5" />
-                  </div>
-                </form>
+              <h1 className="text-center" style={{fontFamily:"Ogg", fontSize:"72px"}}>Thank you.</h1>
+                <h2 className="text-center" style={{color:"#213E5F"}}>We’ve received your query/request. Please give us some time and <br /> we’ll be in touch with you as soon as we can.</h2>
               </div>
             </div>
             <div className="row justify-content-center">
@@ -206,4 +127,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactSent;

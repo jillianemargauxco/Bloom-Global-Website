@@ -98,6 +98,8 @@ const Services = () => {
             </div>
           </div>
         </section>
+
+        {/*
         <section className="ftco-section ftco-degree-bg services-section img mx-md-5" style={{backgroundImage: 'url(images/bg_2.jpg)'}}>
           <div className="overlay" />
           <div className="container ml-5">
@@ -151,6 +153,7 @@ const Services = () => {
             </div>
           </div>
         </section>
+         */}
   
         <footer className="ftco-footer ftco-section">
           <div className="container">

@@ -235,7 +235,7 @@ const AboutUs = () => {
                 <Link to="/">
                   <p className="mb-md-0">
                     &copy;{" "}
-                    <a className="text-white" href="#">
+                    <a className="text-white" href="/">
                       2025 Bloom Global Estate and Development Corp
                     </a>
                     . All Rights Reserved.

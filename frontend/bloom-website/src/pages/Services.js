@@ -48,22 +48,6 @@ const Services = () => {
                   </div>
                 </div>      
               </div>
-              <div className="col-md-3 d-flex align-self-stretch ">
-                <div className="media block-6 services d-block text-center">
-                  <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><span className="flaticon-wallet" /></div>
-                  <div className="media-body py-md-4">
-                    <h3 data-aos="fade-up">Real Estate Investment</h3>
-                    <p className="text-left">
-                      <ul>
-                        <li data-aos="fade-left">Investment analysis and strategy development</li>
-                        <li data-aos="fade-left">Property valuation and appraisal</li>
-                        <li data-aos="fade-left">Financing and capital sourcing</li>
-                        <li data-aos="fade-left">Asset management and portfolio optimization</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>      
-              </div>
               <div className="col-md-3 d-flex align-self-stretch">
                 <div className="media block-6 services d-block text-center">
                   <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><span className="flaticon-file" /></div>
@@ -84,12 +68,12 @@ const Services = () => {
                 <div className="media block-6 services d-block text-center">
                   <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><span className="flaticon-locked" /></div>
                   <div className="media-body py-md-4">
-                    <h3 data-aos="fade-up">Brokerage Services</h3>
+                    <h3 data-aos="fade-up">Brokerage Advisory & Support Services</h3>
                     <p className="text-left">
                       <ul>
-                        <li data-aos="fade-left">Property listing and marketing</li>
-                        <li data-aos="fade-left">Buyer and seller representation</li>
-                        <li data-aos="fade-left">Lease negotiation and transaction management</li>
+                        <li data-aos="fade-left">Property listing and marketing support</li>
+                        <li data-aos="fade-left">Buyer and seller consultation</li>
+                        <li data-aos="fade-left">Lease negotiation assistance</li>
                       </ul>
                       </p>
                   </div>

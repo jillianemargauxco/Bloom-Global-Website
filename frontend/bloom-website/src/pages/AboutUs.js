@@ -228,8 +228,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-        </footer>
-        <div className="container-fluid bg-dark text-white-50 py-4">
+          <div className="container-fluid bg-dark text-white-50 py-4">
           <div className="container">
             <div className="row g-5">
               <div className="col-md-6 text-center text-md-start">
@@ -249,6 +248,8 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
+        </footer>
+        
        
       
     </div>

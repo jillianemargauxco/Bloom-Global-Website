@@ -178,14 +178,14 @@ const Home = () => {
               </div>
             </div>
             <div className="row d-flex">
-              <div className="col-md-3 d-flex align-self-stretch">
+              <div className="col-md-4 d-flex align-self-stretch">
                 <div className="media block-6 services d-block text-center">
-                  <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"> <BsBuildingFillGear style={{ color: '#CDA375', fontSize: '52px' }}/></div>
+                  <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><span className="flaticon-piggy-bank" /></div>
                   <div className="media-body py-md-4" >
-                    <h3 data-aos="fade-up" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '24px'}}>Property Development</h3>
-                    <p className="text-left" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}} data-aos="fade-up">
+                    <h3 data-aos="fade-up" >Property Development</h3>
+                    <p className="text-left" data-aos="fade-up">
                       <ul>
-                        <li data-aos="fade-left" >Land acquisition and site selection</li>
+                        <li data-aos="fade-left">Land acquisition and site selection</li>
                         <li data-aos="fade-left">Feasibility studies and market analysis</li>
                         <li data-aos="fade-left">Property design and development planning</li>
                         <li data-aos="fade-left" >Obtaining permits and approvals</li>
@@ -195,28 +195,12 @@ const Home = () => {
                   </div>
                 </div>      
               </div>
-              <div className="col-md-3 d-flex align-self-stretch ">
+              <div className="col-md-4 d-flex align-self-stretch">
                 <div className="media block-6 services d-block text-center">
-                  <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><FaMoneyBillTrendUp  style={{ color: '#CDA375', fontSize: '54px' }}/></div>
+                  <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><span className="flaticon-file" /></div>
                   <div className="media-body py-md-4">
-                    <h3 data-aos="fade-up" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '24px'}}>Real Estate Investment</h3>
-                    <p className="text-left" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}}>
-                      <ul>
-                        <li data-aos="fade-left">Investment analysis and strategy development</li>
-                        <li data-aos="fade-left">Property valuation and appraisal</li>
-                        <li data-aos="fade-left">Financing and capital sourcing</li>
-                        <li data-aos="fade-left">Asset management and portfolio optimization</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>      
-              </div>
-              <div className="col-md-3 d-flex align-self-stretch">
-                <div className="media block-6 services d-block text-center">
-                  <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><MdManageAccounts style={{ color: '#CDA375', fontSize: '60px' }}/></div>
-                  <div className="media-body py-md-4">
-                    <h3 data-aos="fade-up" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '24px'}}>Property Management</h3>
-                    <p className="text-left" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}}>
+                    <h3 data-aos="fade-up">Property Management</h3>
+                    <p className="text-left">
                       <ul>
                         <li data-aos="fade-left">Tenant screening and leasing</li>
                         <li data-aos="fade-left">Rent collection and financial reporting</li>
@@ -227,16 +211,16 @@ const Home = () => {
                   </div>
                 </div>      
               </div>
-              <div className="col-md-3 d-flex align-self-stretch ">
+              <div className="col-md-4 d-flex align-self-stretch ">
                 <div className="media block-6 services d-block text-center">
-                  <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><FaHandshakeAngle style={{ color: '#CDA375', fontSize: '60px' }}/></div>
+                  <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><span className="flaticon-locked" /></div>
                   <div className="media-body py-md-4">
-                    <h3 data-aos="fade-up" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '24px'}}>Brokerage Services</h3>
-                    <p className="text-left" style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}}>
+                    <h3 data-aos="fade-up">Brokerage Advisory & Support Services</h3>
+                    <p className="text-left">
                       <ul>
-                        <li data-aos="fade-left">Property listing and marketing</li>
-                        <li data-aos="fade-left">Buyer and seller representation</li>
-                        <li data-aos="fade-left">Lease negotiation and transaction management</li>
+                        <li data-aos="fade-left">Property listing and marketing support</li>
+                        <li data-aos="fade-left">Buyer and seller consultation</li>
+                        <li data-aos="fade-left">Lease negotiation assistance</li>
                       </ul>
                       </p>
                   </div>
@@ -393,6 +377,14 @@ const Home = () => {
             </div>
           </div>
         </footer>
+
+        <div className="container-fluid bg-dark text-white-50 py-4">
+          <div className="container">
+              <div className="col-md-12 text-center text-md-start">
+              <span><p style={{ color: "white" }}>&copy;{" "} 2025 Bloom Global Estate and Development Corp. All Rights Reserved.</p><p style={{ color: "gray" }}> “Bloom Global Estate” and the Bloom logo are registered trademarks of Bloom Global Estate and Development Corp.</p> </span>
+              </div>
+          </div>
+        </div>
        
   
 

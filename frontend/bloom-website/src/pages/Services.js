@@ -23,7 +23,7 @@ const Services = () => {
           </div>
         </section>
         <section className="ftco-section ftco-no-pb">
-          <div className="container">
+          <div className="container mb-10">
             <div className="row justify-content-center">
               <div className="col-md-12 heading-section text-center mb-5">
                 <span className="subheading" data-aos="fade-up">Our Services</span>
@@ -31,7 +31,7 @@ const Services = () => {
               </div>
             </div>
             <div className="row d-flex">
-              <div className="col-md-3 d-flex align-self-stretch">
+              <div className="col-md-4 d-flex align-self-stretch">
                 <div className="media block-6 services d-block text-center">
                   <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><span className="flaticon-piggy-bank" /></div>
                   <div className="media-body py-md-4" >
@@ -48,7 +48,7 @@ const Services = () => {
                   </div>
                 </div>      
               </div>
-              <div className="col-md-3 d-flex align-self-stretch">
+              <div className="col-md-4 d-flex align-self-stretch">
                 <div className="media block-6 services d-block text-center">
                   <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><span className="flaticon-file" /></div>
                   <div className="media-body py-md-4">
@@ -64,7 +64,7 @@ const Services = () => {
                   </div>
                 </div>      
               </div>
-              <div className="col-md-3 d-flex align-self-stretch ">
+              <div className="col-md-4 d-flex align-self-stretch ">
                 <div className="media block-6 services d-block text-center">
                   <div className="icon d-flex justify-content-center align-items-center" data-aos="fade-up"><span className="flaticon-locked" /></div>
                   <div className="media-body py-md-4">
@@ -81,7 +81,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section >
 
         {/*
         <section className="ftco-section ftco-degree-bg services-section img mx-md-5" style={{backgroundImage: 'url(images/bg_2.jpg)'}}>
@@ -198,6 +198,13 @@ const Services = () => {
             </div>
           </div>
         </footer>
+        <div className="container-fluid bg-dark text-white-50 py-4">
+          <div className="container">
+              <div className="col-md-12 text-center text-md-start">
+              <span><p style={{ color: "white" }}>&copy;{" "} 2025 Bloom Global Estate and Development Corp. All Rights Reserved.</p><p style={{ color: "gray" }}> “Bloom Global Estate” and the Bloom logo are registered trademarks of Bloom Global Estate and Development Corp.</p> </span>
+              </div>
+          </div>
+        </div>
        
       </div>
      

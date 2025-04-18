@@ -259,6 +259,13 @@ const BloomOneStudio = () => {
             </div>
           </div>
         </footer>
+        <div className="container-fluid bg-dark text-white-50 py-4">
+          <div className="container">
+              <div className="col-md-12 text-center text-md-start">
+              <span><p style={{ color: "white" }}>&copy;{" "} 2025 Bloom Global Estate and Development Corp. All Rights Reserved.</p><p style={{ color: "gray" }}> “Bloom Global Estate” and the Bloom logo are registered trademarks of Bloom Global Estate and Development Corp.</p> </span>
+              </div>
+          </div>
+        </div>
        
        
       </div>

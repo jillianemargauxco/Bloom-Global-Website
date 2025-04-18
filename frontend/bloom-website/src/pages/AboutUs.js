@@ -228,27 +228,15 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="container-fluid bg-dark text-white-50 py-4">
+          
+        </footer>
+        <div className="container-fluid bg-dark text-white-50 py-4">
           <div className="container">
-            <div className="row g-5">
-              <div className="col-md-6 text-center text-md-start">
-                <Link to="/">
-                  <p className="mb-md-0">
-                    &copy;{" "}
-                    <a className="text-white" href="/">
-                      2025 Bloom Global Estate and Development Corp
-                    </a>
-                    . All Rights Reserved.
-                  </p>
-                  <p className="mb-md-0">
-                    “Bloom Global Estate” and the Bloom logo are registered trademarks of Bloom Global Estate and Development Corp.
-                  </p>
-                </Link>
+              <div className="col-md-12 text-center text-md-start">
+              <span><p style={{ color: "white" }}>&copy;{" "} 2025 Bloom Global Estate and Development Corp. All Rights Reserved.</p><p style={{ color: "gray" }}> “Bloom Global Estate” and the Bloom logo are registered trademarks of Bloom Global Estate and Development Corp.</p> </span>
               </div>
-            </div>
           </div>
         </div>
-        </footer>
         
        
       

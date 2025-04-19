@@ -32,20 +32,19 @@ const AboutUs = () => {
               <div className="col-md-6 wrap-about py-md-5 ">
                 <div className="heading-section p-md-5">
                   <h2 className="mb-4">About Our Company</h2>
-                  <p>Bloom Global Estate and Development Corp. is
-                      dedicated to acquiring valuable assets through
-                      various means such as purchase, lease, and
-                      ownership. We have a team of experts who
-                      specialize in the development, management, and
-                      improvement of properties to enhance their value
-                      and potential return on investment.</p>
-                  <p>Our focus is on carefully selecting properties
-                      with growth potential and implementing
-                      strategic plans to optimize their performance in
-                      the market. Whether it's acquiring existing
-                      buildings or developing new structures, we are
-                      committed to delivering exceptional results for
-                      our investors and partners.</p>
+                <p style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}}>Bloom Global Estate and Development Corp. is a real estate company committed
+to acquiring, developing, and managing high-value properties. Through strategic
+purchases, leases, and ownership, we enhance property potential and maximize returns
+for our clients and partners.</p>
+                  <p style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}}>Bloom offers a comprehensive property management system tailored for condo developers,
+property owners, and tenant relationships. Our system simplifies administrative tasks,
+facilitates seamless communication, ensures efficient property maintenance, and optimizes
+rental and investment management.</p>
+                    <p style={{fontFamily:"Montserrat", color:'#243E5E', fontSize: '18px'}}>With a dedicated team focused on real estate development, property management, and
+market optimization, we carefully select properties with strong growth potential.
+Whether acquiring existing buildings or developing new structures, we are committed to
+delivering exceptional value, efficient management, and long-term success in the real
+estate industry.</p>
                 </div>
               </div>
             </div>

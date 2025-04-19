@@ -206,6 +206,7 @@ const Home = () => {
                         <li data-aos="fade-left">Rent collection and financial reporting</li>
                         <li data-aos="fade-left">Maintenance and repairs</li>
                         <li data-aos="fade-left">Property marketing and tenant retention</li>
+                         <li data-aos="fade-left">Property Management System Application</li>
                       </ul>
                     </p>
                   </div>

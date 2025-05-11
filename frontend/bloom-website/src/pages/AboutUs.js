@@ -165,6 +165,37 @@ estate industry.</p>
                         </div>
                       </section>
 
+                      <section className="ftco-section ftco-no-pb">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-md-12 heading-section text-center mb-5">
+                <span className="subheading" data-aos="fade-up">Product Launch</span>
+                <h2 className="mb-2" data-aos="fade-up" style={{ fontFamily: "Montserrat", color: "#243E5E", fontSize: "40px" }}>
+                  Introducing Our Tenant App
+                </h2>
+                <p style={{ fontFamily: "Montserrat", color: "#243E5E", fontSize: "18px" }} data-aos="fade-up">
+                  Discover how our new property tenant app simplifies property management and enhances tenant experiences.
+                </p>
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div className="col-md-10">
+                <div className="video-container" data-aos="fade-up">
+                  <iframe
+                    width="100%"
+                    height="500"
+                    src="https://www.youtube.com/watch?v=4n1eHQ1ih8I&t=8s&ab_channel=BloomGlobal%C2%AE"
+                    title="Tenant App Product Launch"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
       
                 
     

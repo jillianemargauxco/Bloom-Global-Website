@@ -109,27 +109,27 @@ const Home = () => {
         
         </div>
         <section className="ftco-section ftco-no-pb">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-md-12 heading-section text-center mb-5">
-                <span className="subheading" data-aos="fade-up">Product Launch</span>
-                <h2 className="mb-2" data-aos="fade-up" style={{ fontFamily: "Montserrat", color: "#243E5E", fontSize: "40px" }}>
-                  Introducing Our Tenant App
-                </h2>
-                <p style={{ fontFamily: "Montserrat", color: "#243E5E", fontSize: "18px" }} data-aos="fade-up">
-                  Discover how our new property tenant app simplifies property management and enhances tenant experiences.
-                </p>
-              </div>
-            </div>
-            <div className="row justify-content-center">
-              <div className="col-md-10">
-                <div className="video-container" data-aos="fade-up">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4n1eHQ1ih8I?si=ESRdZ1_hS9fKkFvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+                        <div className="container">
+                          <div className="row justify-content-center">
+                            <div className="col-md-12 heading-section text-center mb-5">
+                              <span className="subheading" data-aos="fade-up">Product Launch</span>
+                              <h2 className="mb-2" data-aos="fade-up" style={{ fontFamily: "Montserrat", color: "#243E5E", fontSize: "40px" }}>
+                                Introducing Our Copyrighted Property and Tenant Management Application
+                              </h2>
+                              <p style={{ fontFamily: "Montserrat", color: "#243E5E", fontSize: "18px" }} data-aos="fade-up">
+                                Discover how © Bloom Global Estate & Development's Property and Tenant Management Application simplifies property management and enhances tenant experiences.
+                              </p>
+                            </div>
+                          </div>
+                          <div className="row justify-content-center">
+                            <div className="col-md-10">
+                              <div className="video-container" data-aos="fade-up">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/4n1eHQ1ih8I?si=ESRdZ1_hS9fKkFvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
         <section className="ftco-section go-to-here">
           <div className="container">
           <div className="row justify-content-center">

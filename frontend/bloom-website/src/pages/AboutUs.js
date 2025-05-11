@@ -181,15 +181,7 @@ estate industry.</p>
             <div className="row justify-content-center">
               <div className="col-md-10">
                 <div className="video-container" data-aos="fade-up">
-                  <iframe
-                    width="100%"
-                    height="500"
-                    src="https://www.youtube.com/watch?v=4n1eHQ1ih8I&t=8s&ab_channel=BloomGlobal%C2%AE"
-                    title="Tenant App Product Launch"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4n1eHQ1ih8I?si=ESRdZ1_hS9fKkFvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>

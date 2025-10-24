@@ -114,7 +114,7 @@ const BloomOneStudio = () => {
                             <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-8.png)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-1.png)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-1.jpg)'}} />
                             </SwiperSlide>
                            
                             </Swiper>

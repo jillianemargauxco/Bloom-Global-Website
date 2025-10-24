@@ -62,7 +62,57 @@ const Home = () => {
       link: '/bloom-one-three-bedroom'
     }
   ];
-  
+
+  const coastalList = [
+    {
+      propertyName: 'Coastal Luxury Residences',
+      propertyType: 'Residential',
+      unitType: 'Studio',
+      location: 'Coastal Luxury Residences, Paranaque City',
+      size: 30.70,
+      price: 19000,
+      bed: 1,
+      bath: 1,
+      imgUrl: 'images/coastal/2BR-Units/coastal-2br-1.jpeg',
+      link: '/coastal-studio',
+    },
+    {
+      propertyName: 'Coastal Luxury Residences',
+      propertyType: 'Residential',
+      unitType: 'One Bedroom',
+      location: 'Coastal Luxury Residences, Paranaque City',
+      size: 51.75,
+      price: 27000,
+      bed: 1,
+      bath: 1,
+      imgUrl: 'images/coastal/2BR-Units/coastal-2br-1.jpeg',
+      link: '/coastal-one-bedroom'
+    },
+    {
+      propertyName: 'Coastal Luxury Residences',
+      propertyType: 'Residential',
+      unitType: 'Two Bedroom',
+      location: 'Coastal Luxury Residences, Paranaque City',
+      size: 93.48,
+      price: 52000,
+      bed: 2,
+      bath: 1,
+      imgUrl: 'images/coastal/2BR-Units/coastal-2br-1.jpeg',
+      link: '/coastal-two-bedroom'
+    },
+    {
+      propertyName: 'Coastal Luxury Residences',
+      propertyType: 'Residential',
+      unitType: 'Three Bedroom',
+      location: 'Coastal Luxury Residences, Paranaque City',
+      size: 125.10,
+      price: 70000,
+      bed: 3,
+      bath: 2,
+      imgUrl: 'images/coastal/2BR-Units/coastal-2br-1.jpeg',
+      link: '/coastal-three-bedroom'
+    }
+  ];
 
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
@@ -141,11 +191,47 @@ const Home = () => {
                           </div>
                         </div>
                       </section>
+
         <section className="ftco-section go-to-here">
           <div className="container">
           <div className="row justify-content-center">
               <div className="col-md-12 heading-section text-center  mb-5">
                 <span className="subheading" data-aos="fade-up">Our Properties</span>
+                <h2 className="mb-2" data-aos="fade-up">Check out our properties for lease</h2>
+              </div>
+            </div>
+            <div className="row">
+            {coastalList.map((property, index) => (
+            <div className="col-md-3" key={index}>
+              <div className="property-wrap">
+                <Link to={property.link} className="img" style={{ backgroundImage: `url(${property.imgUrl})` }} />
+                <div className="text">
+                  <p className="price">
+                    <span className="orig-price">₱ {property.price.toLocaleString()}<small>/mo</small></span>
+                  </p>
+                  <ul className="property_list">
+                    <li><span className="flaticon-bed" />{property.bed}</li>
+                    <li><span className="flaticon-bathtub" />{property.bath}</li>
+                    <li><span className="flaticon-floor-plan" />{property.size} sqm</li>
+                  </ul>
+                  <h3><Link to={property.link}>{property.propertyName} : {property.unitType} Unit</Link></h3>
+                  <span className="location">{property.location}</span>
+                  <Link to={property.link} className="d-flex align-items-center justify-content-center btn-custom">
+                    <span className="ion-ios-link" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+            
+            </div>
+          </div>
+        </section>
+        <section className="ftco-section go-to-here">
+          <div className="container">
+          <div className="row justify-content-center">
+              <div className="col-md-12 heading-section text-center  mb-5">
+                <span className="subheading" data-aos="fade-up">Our Projects</span>
                 <h2 className="mb-2" data-aos="fade-up">Check Out Our Upcoming Project</h2>
               </div>
             </div>
@@ -401,7 +487,7 @@ estate industry.</p>
                   <h2 className="ftco-heading-2">Have a Questions?</h2>
                   <div className="block-23 mb-3">
                     <ul>
-                      <li><span className="icon icon-map-marker" /><span className="text">Sunrise Drive, Pasay City, Philippines, 1700</span></li>
+                      <li><span className="icon icon-map-marker" /><span className="text">5th Floor Coastal Luxury Residences, Parañaque City, Philippines, 1700</span></li>
                       <li><a href="tel:+639175425666"><span className="icon icon-phone" /><span className="text">+63917 542 5666</span></a></li>
                       <li><a href="mailto:ask@bloomglobalestate.com"><span className="icon icon-envelope pr-4" /><span className="text">ask@bloomglobalestate.com</span></a></li>
                     </ul>

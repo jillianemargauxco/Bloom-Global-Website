@@ -18,6 +18,12 @@ import BloomOneOneBed from './components/BloomOne_OneBed';
 import BloomOneTwoBed from './components/BloomOne_TwoBed';
 import BloomOneThreeBed from './components/BloomOne_ThreeBed';
 
+import CoastalStudio from './components/Coastal_Studio';
+import CoastalOneBed from './components/Coastal_OneBed';
+import CoastalTwoBed from './components/Coastal_TwoBed';
+import CoastalThreeBed from './components/Coastal_ThreeBed';
+
+
 import "./App.css";
 
 const AppLayout = () => (
@@ -38,6 +44,10 @@ const AppLayout = () => (
       <Route path="/bloom-one-one-bedroom" element={<BloomOneOneBed />} />
       <Route path="/bloom-one-two-bedroom" element={<BloomOneTwoBed />} />
       <Route path="/bloom-one-three-bedroom" element={<BloomOneThreeBed />} />
+      <Route path="/coastal-studio" element={<CoastalStudio />} />
+      <Route path="/coastal-one-bedroom" element={<CoastalOneBed />} />
+      <Route path="/coastal-two-bedroom" element={<CoastalTwoBed />} />
+      <Route path="/coastal-three-bedroom" element={<CoastalThreeBed />} />
       <Route path="/contact-sent" element={<ContactSent />} />
       <Route path="/contact" element={<Contact />} />
      </Route>

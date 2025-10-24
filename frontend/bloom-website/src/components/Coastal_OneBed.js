@@ -193,7 +193,7 @@ const BloomOneOneBed = () => {
               aria-expanded="true"
               style={{ color: '#CDA375' }}
             >
-              Construction Updates
+              Amenities
             </a>
           </li>
         </ul>
@@ -299,7 +299,7 @@ const BloomOneOneBed = () => {
           </p>
         </div>
 
-        {/* CONSTRUCTION UPDATES TAB */}
+        {/* Amenities TAB */}
         <div
           className="tab-pane fade"
           id="pills-review"

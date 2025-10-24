@@ -83,6 +83,31 @@ const BloomOneThreeBed = () => {
                             <SwiperSlide>
                             <div className="img" style={{backgroundImage: 'url(images/coastal/3BR-Units/coastal-3br-9.jpeg)'}} />
                             </SwiperSlide>
+
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-2.jpeg)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3.jpeg)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-4.jpeg)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-5.jpeg)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-6.jpeg)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-7.jpeg)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-8.jpeg)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-1.jpeg)'}} />
+                            </SwiperSlide>
                             
                             </Swiper>
                             <div className='slider-controller'>

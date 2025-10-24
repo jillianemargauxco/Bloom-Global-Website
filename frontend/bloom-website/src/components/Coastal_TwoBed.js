@@ -112,7 +112,37 @@ const BloomOneTwoBed = () => {
                             <SwiperSlide>
                             <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/coastal-2br-18.jpeg)'}} />
                             </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-2.jpeg)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3.jpeg)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-4.jpeg)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-5.jpeg)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-6.jpeg)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-7.jpeg)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-8.jpeg)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-1.jpeg)'}} />
+                            </SwiperSlide>
+
                             </Swiper>
+
+                            
+
+
+
                             <div className='slider-controller'>
                               <div className='swiper-button-prev slider-arrow ml-5' style={{ color: 'white', fontSize: '200px' }}> </div>
                               <div className='swiper-button-next slider-arrow mr-5' style={{ color: 'white', fontSize: '200px' }}> </div>

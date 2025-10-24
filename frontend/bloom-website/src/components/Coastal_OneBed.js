@@ -98,9 +98,33 @@ const BloomOneOneBed = () => {
                     <SwiperSlide>
                     <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/coastal-1br-14.jpeg)'}} />
                     </SwiperSlide>
+
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/coastal-1br-15.jpeg)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-2.jpeg)'}} />
                     </SwiperSlide>
+                    <SwiperSlide>
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3.jpeg)'}} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-4.jpeg)'}} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-5.jpeg)'}} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-6.jpeg)'}} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-7.jpeg)'}} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-8.jpeg)'}} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-1.jpeg)'}} />
+                    </SwiperSlide>
+
+
                     </Swiper>
                     <div className='slider-controller'>
                       <div className='swiper-button-prev slider-arrow ml-5' style={{ color: 'white', fontSize: '200px' }}> </div>

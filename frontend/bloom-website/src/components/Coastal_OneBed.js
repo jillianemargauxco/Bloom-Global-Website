@@ -100,28 +100,28 @@ const BloomOneOneBed = () => {
                     </SwiperSlide>
 
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-2.jpeg)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-2.png)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3.jpeg)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3.png)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-4.jpeg)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-4.png)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-5.jpeg)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-5.png)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-6.jpeg)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-6.png)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-7.jpeg)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-7.png)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-8.jpeg)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-8.png)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-1.jpeg)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-1.png)'}} />
                     </SwiperSlide>
 
 

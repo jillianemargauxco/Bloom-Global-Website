@@ -324,7 +324,7 @@ const BloomOneThreeBed = () => {
                               <img src="images/coastal/coastal-2.jpg" alt="Bedroom Interior" />
                             </div>
                             <div className="photo grid-item">
-                              <img src="images/coastal/coastal-3.jpg" alt="Swimming Pool" />
+                              <img src="images/coastal/coastal-3.png" alt="Swimming Pool" />
                             </div>
                           </div>
                         </div>

@@ -100,7 +100,7 @@ const BloomOneOneBed = () => {
                     </SwiperSlide>
 
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-2.png)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-2.jpg)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
                     <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3.png)'}} />
@@ -336,7 +336,7 @@ const BloomOneOneBed = () => {
                       <img src="images/coastal/coastal-2.jpg" alt="Bedroom Interior" />
                     </div>
                     <div className="photo grid-item">
-                      <img src="images/coastal/coastal-3.jpg" alt="Swimming Pool" />
+                      <img src="images/coastal/coastal-3.png" alt="Swimming Pool" />
                     </div>
                   </div>
                 </div>

@@ -23,7 +23,7 @@ const BloomOneThreeBed = () => {
                     <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                       <div className="col-md-9 pb-5 text-center">
                         <p className="breadcrumbs"><span className="mr-2"><Link to="/">Home <i className="ion-ios-arrow-forward" /></Link></span> <span>Properties <i className="ion-ios-arrow-forward" /></span></p>
-                        <h1 className="mb-3 bread" style={{fontFamily:"Ogg", color:'#243E5E', fontSize:'5rem'}}>Coastal Luxury Residences: One Bedroom Unit</h1> 
+                        <h1 className="mb-3 bread" style={{fontFamily:"Ogg", color:'#243E5E', fontSize:'5rem'}}>Coastal Luxury Residences: Three Bedroom Unit</h1> 
                       </div>
                     </div>
                   </div>
@@ -57,31 +57,31 @@ const BloomOneThreeBed = () => {
                                 className='.swiper_container'
                                   >
                             <SwiperSlide>
-                          <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3br-1.jpeg)'}} />
+                          <div className="img" style={{backgroundImage: 'url(images/coastal/3BR-Units/coastal-3br-1.jpeg)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3br-2.jpeg)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/3BR-Units/coastal-3br-2.jpeg)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3br-3.jpeg)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/3BR-Units/coastal-3br-3.jpeg)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3br-4.jpeg)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/3BR-Units/coastal-3br-4.jpeg)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3br-5.jpeg)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/3BR-Units/coastal-3br-5.jpeg)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3br-6.jpeg)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/3BR-Units/coastal-3br-6.jpeg)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3br-7.jpeg)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/3BR-Units/coastal-3br-7.jpeg)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3br-8.jpeg)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/3BR-Units/coastal-3br-8.jpeg)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-3br-9.jpeg)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/3BR-Units/coastal-3br-9.jpeg)'}} />
                             </SwiperSlide>
                             
                             </Swiper>
@@ -100,7 +100,7 @@ const BloomOneThreeBed = () => {
                     
                     <div className="text text-center">
                             <span className="subheading">Paranaque City</span>
-                            <h2 style={{ color: '#CDA375' }}><strong>Coastal Luxury Residences : One Bedroom Unit</strong></h2>
+                            <h2 style={{ color: '#CDA375' }}><strong>Coastal Luxury Residences : Three Bedroom Unit</strong></h2>
                           </div>
         
                     <div className="row">

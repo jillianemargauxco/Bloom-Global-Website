@@ -226,7 +226,7 @@ const Home = () => {
             </div>
             <div className="row">
             {coastalList.map((property, index) => (
-            <div className="col-md-3" key={index}>
+            <div className="col-md-4" key={index}>
               <div className="property-wrap">
                 <Link to={property.link} className="img" style={{ backgroundImage: `url(${property.imgUrl})` }} />
                 <div className="text">
@@ -251,6 +251,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         <section className="ftco-section go-to-here">
           <div className="container">
           <div className="row justify-content-center">

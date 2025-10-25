@@ -23,7 +23,7 @@ const BloomOneOneBed = () => {
             <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
               <div className="col-md-9 pb-5 text-center">
                 <p className="breadcrumbs"><span className="mr-2"><Link to="/">Home <i className="ion-ios-arrow-forward" /></Link></span> <span>Properties <i className="ion-ios-arrow-forward" /></span></p>
-                <h1 className="mb-3 bread" style={{fontFamily:"Ogg", color:'#243E5E', fontSize:'5rem'}}>Coastal Luxury Residences: One Bedroom Unit</h1> 
+                <h1 className="mb-3 bread" style={{fontFamily:"Ogg", color:'#243E5E', fontSize:'5rem'}}>Coastal Luxury Residences: One Bedroom Unit (2nd Unit)</h1> 
               </div>
             </div>
           </div>
@@ -57,45 +57,47 @@ const BloomOneOneBed = () => {
                         className='.swiper_container'
                           >
                     <SwiperSlide>
-                  <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/1/coastal-1br-1.JPG)'}} />
+                  <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/2/coastal-1br-1.JPG)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/1/coastal-1br-2.JPG)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/2/coastal-1br-2.JPG)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/1/coastal-1br-3.JPG)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/2/coastal-1br-3.JPG)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/1/coastal-1br-4.JPG)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/2/coastal-1br-4.JPG)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/1/coastal-1br-5.JPG)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/2/coastal-1br-5.JPG)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/1/coastal-1br-6.JPG)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/2/coastal-1br-6.JPG)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/1/coastal-1br-7.JPG)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/2/coastal-1br-7.JPG)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/1/coastal-1br-8.JPG)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/2/coastal-1br-8.JPG)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/1/coastal-1br-9.JPG)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/2/coastal-1br-9.JPG)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/1/coastal-1br-10.JPG)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/2/coastal-1br-10.JPG)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/1/coastal-1br-11.JPG)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/2/coastal-1br-11.JPG)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/1/coastal-1br-12.JPG)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/2/coastal-1br-12.JPG)'}} />
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/1/coastal-1br-13.JPG)'}} />
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/2/coastal-1br-13.JPG)'}} />
                     </SwiperSlide>
-                   
+                   <SwiperSlide>
+                    <div className="img" style={{backgroundImage: 'url(images/coastal/1BR-Units/2/coastal-1br-14.JPG)'}} />
+                    </SwiperSlide>
 
                     <SwiperSlide>
                     <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-2.jpg)'}} />

@@ -20,7 +20,9 @@ import BloomOneThreeBed from './components/BloomOne_ThreeBed';
 
 import CoastalStudio from './components/Coastal_Studio';
 import CoastalOneBed from './components/Coastal_OneBed';
+import CoastalOneBed_2 from './components/Coastal_OneBed_2';
 import CoastalTwoBed from './components/Coastal_TwoBed';
+import CoastalTwoBed_2 from './components/Coastal_TwoBed_2';
 import CoastalThreeBed from './components/Coastal_ThreeBed';
 
 
@@ -46,7 +48,9 @@ const AppLayout = () => (
       <Route path="/bloom-one-three-bedroom" element={<BloomOneThreeBed />} />
       <Route path="/coastal-studio" element={<CoastalStudio />} />
       <Route path="/coastal-one-bedroom" element={<CoastalOneBed />} />
+      <Route path="/coastal-one-bedroom-2" element={<CoastalOneBed_2 />} />
       <Route path="/coastal-two-bedroom" element={<CoastalTwoBed />} />
+      <Route path="/coastal-two-bedroom-2" element={<CoastalTwoBed_2 />} />
       <Route path="/coastal-three-bedroom" element={<CoastalThreeBed />} />
       <Route path="/contact-sent" element={<ContactSent />} />
       <Route path="/contact" element={<Contact />} />

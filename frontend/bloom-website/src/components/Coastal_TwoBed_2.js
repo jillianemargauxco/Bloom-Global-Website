@@ -10,9 +10,7 @@ import 'swiper/css/navigation';
 
 
 
-
-
-const BloomOneStudio = () => {
+const BloomOneTwoBed = () => {
   return (
     <div>
 
@@ -25,7 +23,7 @@ const BloomOneStudio = () => {
                     <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                       <div className="col-md-9 pb-5 text-center">
                         <p className="breadcrumbs"><span className="mr-2"><Link to="/">Home <i className="ion-ios-arrow-forward" /></Link></span> <span>Properties <i className="ion-ios-arrow-forward" /></span></p>
-                        <h1 className="mb-3 bread" style={{fontFamily:"Ogg", color:'#243E5E', fontSize:'5rem'}}>Coastal Luxury Residences: Studio Unit</h1> 
+                        <h1 className="mb-3 bread" style={{fontFamily:"Ogg", color:'#243E5E', fontSize:'5rem'}}>Coastal Luxury Residences: Two Bedroom Unit</h1> 
                       </div>
                     </div>
                   </div>
@@ -59,36 +57,57 @@ const BloomOneStudio = () => {
                                 className='.swiper_container'
                                   >
                             <SwiperSlide>
-                          <div className="img" style={{backgroundImage: 'url(images/coastal/Studio-Units/coastal-studio-1.JPG)'}} />
+                          <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-1.JPG)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/Studio-Units/coastal-studio-2.JPG)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-2.JPG)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/Studio-Units/coastal-studio-3.JPG)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-3.JPG)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/Studio-Units/coastal-studio-4.JPG)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-4.JPG)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/Studio-Units/coastal-studio-5.JPG)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-5.JPG)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/Studio-Units/coastal-studio-6.JPG)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-6.JPG)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/Studio-Units/coastal-studio-7.JPG)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-7.JPG)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/Studio-Units/coastal-studio-8.JPG)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-8.JPG)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/Studio-Units/coastal-studio-9.JPG)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-9.JPG)'}} />
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className="img" style={{backgroundImage: 'url(images/coastal/Studio-Units/coastal-studio-10.JPG)'}} />
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-10.JPG)'}} />
                             </SwiperSlide>
-                           
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-11.JPG)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-12.JPG)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-13.JPG)'}} />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-14.JPG)'}} />
+                            </SwiperSlide>
+                             <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-15.JPG)'}} />
+                            </SwiperSlide>
+                             <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-16.JPG)'}} />
+                            </SwiperSlide>
+                             <SwiperSlide>
+                            <div className="img" style={{backgroundImage: 'url(images/coastal/2BR-Units/2/coastal-2br-17.JPG)'}} />
+                            </SwiperSlide>
+                 
 
                             <SwiperSlide>
                             <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-2.jpg)'}} />
@@ -120,8 +139,13 @@ const BloomOneStudio = () => {
                             <SwiperSlide>
                             <div className="img" style={{backgroundImage: 'url(images/coastal/coastal-1.jpg)'}} />
                             </SwiperSlide>
-                           
+
                             </Swiper>
+
+                            
+
+
+
                             <div className='slider-controller'>
                               <div className='swiper-button-prev slider-arrow ml-5' style={{ color: 'white', fontSize: '200px' }}> </div>
                               <div className='swiper-button-next slider-arrow mr-5' style={{ color: 'white', fontSize: '200px' }}> </div>
@@ -137,7 +161,7 @@ const BloomOneStudio = () => {
                     
                     <div className="text text-center">
                             <span className="subheading">Paranaque City</span>
-                            <h2 style={{ color: '#CDA375' }}><strong>Coastal Luxury Residences : Studio Unit</strong></h2>
+                            <h2 style={{ color: '#CDA375' }}><strong>Coastal Luxury Residences : Two Bedroom Unit (2nd Unit)</strong></h2>
                           </div>
         
                     <div className="row">
@@ -213,13 +237,16 @@ const BloomOneStudio = () => {
                         </li>
                         <li className="check">
                           <span className="ion-ios-checkmark" style={{ color: '#CDA375' }} />
-                          Unit Type: Studio Unit
+                          Unit Type: 2-Bedroom Condominium
                         </li>
                         <li className="check">
                           <span className="ion-ios-checkmark" style={{ color: '#CDA375' }} />
-                          Floor Area: 30.70 sqm
+                          Floor Area: 93.48 sqm
                         </li>
-                        
+                        <li className="check">
+                          <span className="ion-ios-checkmark" style={{ color: '#CDA375' }} />
+                          Bedrooms: 2
+                        </li>
                         <li className="check">
                           <span className="ion-ios-checkmark" style={{ color: '#CDA375' }} />
                           Bathrooms: 1
@@ -258,11 +285,11 @@ const BloomOneStudio = () => {
                         <li><strong>Rates</strong></li>
                         <li className="check">
                           <span className="ion-ios-checkmark" style={{ color: '#CDA375' }} />
-                          ₱3,800 / night (short stay)
+                          ₱10,200 / night (short stay)
                         </li>
                         <li className="check">
                           <span className="ion-ios-checkmark" style={{ color: '#CDA375' }} />
-                          ₱19,000 / month (long-term)
+                          ₱52,000 / month (long-term)
                         </li>
                         <li className="check">
                           <span className="ion-ios-checkmark" style={{ color: '#CDA375' }} />
@@ -286,7 +313,7 @@ const BloomOneStudio = () => {
                     <strong> Ayala Malls Manila Bay</strong>, <strong>NAIA Airport</strong>, and <strong>Mall of Asia</strong>.
                   </p>
                   <p>
-                    Our spacious <strong>Studio units</strong> (30.70 sqm) are designed for comfort and convenience — ideal for
+                    Our spacious <strong>2-Bedroom units</strong> (93.48 sqm) are designed for comfort and convenience — ideal for
                     short-term stays, business trips, or long-term rentals. Each unit features a well-lit living area, modern
                     interiors, and a relaxing atmosphere complemented by access to resort-style amenities.
                   </p>
@@ -312,7 +339,7 @@ const BloomOneStudio = () => {
                             <span className="text-right">October 2025</span>
                           </h4>
                           <p>
-                            The Studio units at Coastal Luxury Residences are fully finished and move-in ready.
+                            The 2-Bedroom units at Coastal Luxury Residences are fully finished and move-in ready.
                             The development continues to enhance shared amenities — including upgraded poolside lounges,
                             landscaped walkways, and newly outfitted gym equipment. Reservation and viewing schedules
                             are now open for short and long-term lease clients.
@@ -409,6 +436,7 @@ const BloomOneStudio = () => {
                     </div>
                   </div>
                 </footer>
+
         <div className="container-fluid bg-dark text-white-50 py-4">
           <div className="container">
               <div className="col-md-12 text-center text-md-start">
@@ -426,4 +454,4 @@ const BloomOneStudio = () => {
   );
 };
 
-export default BloomOneStudio;
+export default BloomOneTwoBed;

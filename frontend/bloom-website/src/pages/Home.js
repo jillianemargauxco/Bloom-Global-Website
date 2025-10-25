@@ -73,7 +73,7 @@ const Home = () => {
       price: 19000,
       bed: 1,
       bath: 1,
-      imgUrl: 'images/coastal/Studio-Units/coastal-studio-1.jpeg',
+      imgUrl: 'images/coastal/Studio-Units/coastal-studio-1.JPG',
       link: '/coastal-studio',
     },
     {
@@ -85,8 +85,20 @@ const Home = () => {
       price: 27000,
       bed: 1,
       bath: 1,
-      imgUrl: 'images/coastal/1BR-Units/coastal-1br-6.jpeg',
+      imgUrl: 'images/coastal/1BR-Units/1/coastal-1br-1.JPG',
       link: '/coastal-one-bedroom'
+    },
+    {
+      propertyName: 'Coastal Luxury Residences',
+      propertyType: 'Residential',
+      unitType: 'One Bedroom',
+      location: 'Coastal Luxury Residences, Paranaque City',
+      size: 51.75,
+      price: 27000,
+      bed: 1,
+      bath: 1,
+      imgUrl: 'images/coastal/1BR-Units/2/coastal-1br-1.JPG',
+      link: '/coastal-one-bedroom-2'
     },
     {
       propertyName: 'Coastal Luxury Residences',
@@ -97,8 +109,20 @@ const Home = () => {
       price: 52000,
       bed: 2,
       bath: 1,
-      imgUrl: 'images/coastal/2BR-Units/coastal-2br-1.jpeg',
+      imgUrl: 'images/coastal/2BR-Units/1/coastal-2br-1.JPG',
       link: '/coastal-two-bedroom'
+    },
+    {
+      propertyName: 'Coastal Luxury Residences',
+      propertyType: 'Residential',
+      unitType: 'Two Bedroom',
+      location: 'Coastal Luxury Residences, Paranaque City',
+      size: 93.48,
+      price: 52000,
+      bed: 2,
+      bath: 1,
+      imgUrl: 'images/coastal/2BR-Units/2/coastal-2br-1.JPG',
+      link: '/coastal-two-bedroom-2'
     },
     {
       propertyName: 'Coastal Luxury Residences',
@@ -109,7 +133,7 @@ const Home = () => {
       price: 70000,
       bed: 3,
       bath: 2,
-      imgUrl: 'images/coastal/3BR-Units/coastal-3br-1.jpeg',
+      imgUrl: 'images/coastal/3BR-Units/coastal-3br-1.JPG',
       link: '/coastal-three-bedroom'
     }
   ];

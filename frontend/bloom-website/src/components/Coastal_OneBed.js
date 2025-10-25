@@ -23,7 +23,7 @@ const BloomOneOneBed = () => {
             <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
               <div className="col-md-9 pb-5 text-center">
                 <p className="breadcrumbs"><span className="mr-2"><Link to="/">Home <i className="ion-ios-arrow-forward" /></Link></span> <span>Properties <i className="ion-ios-arrow-forward" /></span></p>
-                <h1 className="mb-3 bread" style={{fontFamily:"Ogg", color:'#243E5E', fontSize:'5rem'}}>Coastal Luxury Residences: One Bedroom Unit</h1> 
+                <h1 className="mb-3 bread" style={{fontFamily:"Ogg", color:'#243E5E', fontSize:'5rem'}}>Coastal Luxury Residences: One Bedroom Unit (1st Unit)</h1> 
               </div>
             </div>
           </div>
@@ -145,7 +145,7 @@ const BloomOneOneBed = () => {
             
             <div className="text text-center">
                     <span className="subheading">Paranaque City</span>
-                    <h2 style={{ color: '#CDA375' }}><strong>Coastal Luxury Residences : One Bedroom Unit</strong></h2>
+                    <h2 style={{ color: '#CDA375' }}><strong>Coastal Luxury Residences: One Bedroom Unit (1st Unit)</strong></h2>
                   </div>
 
             <div className="row">

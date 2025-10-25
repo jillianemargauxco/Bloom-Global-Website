@@ -147,7 +147,7 @@ const BloomOneOneBed = () => {
             
             <div className="text text-center">
                     <span className="subheading">Paranaque City</span>
-                    <h2 style={{ color: '#CDA375' }}><strong>Coastal Luxury Residences : One Bedroom Unit</strong></h2>
+                    <h2 style={{ color: '#CDA375' }}><strong>Coastal Luxury Residences: One Bedroom Unit (2nd Unit)</strong></h2>
                   </div>
 
             <div className="row">

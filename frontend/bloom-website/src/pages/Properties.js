@@ -94,7 +94,7 @@ const Properties = () => {
       price: 27000,
       bed: 1,
       bath: 1,
-      imgUrl: 'images/coastal/1BR-Units/2/coastal-1br-1.JPG',
+      imgUrl: 'images/coastal/1BR-Units/2/coastal-1br-6.JPG',
       link: '/coastal-one-bedroom-2'
     },
     {
@@ -118,7 +118,7 @@ const Properties = () => {
       price: 52000,
       bed: 2,
       bath: 1,
-      imgUrl: 'images/coastal/2BR-Units/2/coastal-2br-1.JPG',
+      imgUrl: 'images/coastal/2BR-Units/2/coastal-2br-2.JPG',
       link: '/coastal-two-bedroom-2'
     },
     {
@@ -130,7 +130,7 @@ const Properties = () => {
       price: 70000,
       bed: 3,
       bath: 2,
-      imgUrl: 'images/coastal/3BR-Units/coastal-3br-1.JPG',
+      imgUrl: 'images/coastal/3BR-Units/coastal-3br-2.JPG',
       link: '/coastal-three-bedroom'
     }
   ];
